@@ -1,0 +1,759 @@
+/* ----------------------mobile view-------------------------- */
+@media screen and (max-width: 1081px) {
+  /* ----------------nevbar---------------- */
+  .nevbar_main_containner {
+    min-width: 100vw;
+    min-height: 120px;
+    max-height: 120px;
+    padding: 30px 0px;
+  }
+  .nevbar_homescouts {
+    width: 100%;
+    padding: 0px 25px;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  .navbar_main_homescouts > a > img {
+    width: 120px;
+    border-radius: 3px;
+  }
+  .nevbar_container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nevbar_menu_div {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: none;
+  }
+  .nevbar_menu_div ul {
+    flex-direction: column;
+    min-width: 100%;
+    padding: 20px;
+  }
+  .nevbar_menu_div ul li {
+    width: 100%;
+    padding: 20px;
+    font-weight: 500;
+  }
+  .nevbar_menu_div ul li a:hover {
+    font-weight: 600;
+    color: #1c57c9;
+    cursor: pointer;
+  }
+  .navbar_signin_div {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    display: none;
+  }
+  .navbar_signin_div div {
+    padding: 10px;
+  }
+  .navbar_signin_div p {
+    display: none;
+  }
+  .navbar_signin_div > div > .sign_in_button {
+    background-color: #ed6823;
+    width: 100px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar_signin_div > div > .get_started_button {
+    width: 140px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: #ed6823;
+    cursor: pointer;
+    border: 1px solid #ed6823;
+  }
+
+  .nevbar_menu_button1 {
+    display: block;
+    z-index: 5;
+  }
+  .nevbar_menu_button1 > .btn_menu {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+  .nevbar_menu_button1 > .Active_btn_menu,
+  .Active_btn_menu:focus {
+    border: 1px solid #ed6823 !important;
+    color: red;
+    width: 120px;
+  }
+  .Active_menu {
+    transition-duration: 2s;
+    display: flex !important;
+    color: black;
+    transition: all 0.5s, display 2s;
+  }
+  .Active_Nev {
+    background-color: white;
+  }
+  /* ---------------- */
+
+  /* ------------Banner ---------------------- */
+
+  .banner_container_section_1 {
+    width: 100%;
+  }
+
+  .banner_container_content {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .banner_circle_image_div {
+    display: none;
+  }
+  .banner_heading h1 {
+    font-size: 4rem;
+    line-height: 160%;
+    text-align: center;
+  }
+  .banner_paragraph {
+    text-align: center;
+  }
+  .banner_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ----------------------------------- */
+  .banner_container_section_2 {
+    display: none;
+  }
+
+  /*--------------------Features---------------  */
+  .feature_container {
+    height: 100%;
+  }
+
+  .feature_container1 {
+    height: 150px;
+  }
+
+  /* --------- */
+  .feature_container2 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .feature_illustation {
+    width: 100%;
+  }
+  .feature_illustation img {
+    width: 80%;
+  }
+  /* ----------------- */
+  .feature_meetscouts {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .feature_meetscouts_Meet h1 {
+    text-align: center;
+  }
+  .feature_meetscouts_Meet p {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  /* ---------------------- */
+  .feature_meethomescouts {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature_meeth_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature_meeth_div h4 {
+    text-align: center;
+    padding: 0px 0px 15px;
+    font-size: 24px;
+  }
+  .feature_meeth_div p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  /* -------------------------Update--------------------- */
+
+  .main_update_dot3 {
+    bottom: -8%;
+    /* ----- */
+  }
+  .update_container {
+    flex-direction: column;
+    /* --------- */
+  }
+
+  .update_section1 {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding: 50px;
+
+    /* -------------- */
+  }
+  .update_section1_content {
+    padding-left: 0px;
+  }
+  .update_section1_content h6 {
+    text-align: center;
+    width: 100%;
+
+    /* ------- */
+  }
+
+  .update_section1_content > div > h1 {
+    text-align: center;
+    width: 100%;
+    /* ------- */
+  }
+  .update_section2 {
+    padding-top: 200px;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+
+    /* --------- */
+  }
+  .updatephotos {
+    height: 625px;
+    /* ------ */
+  }
+  .update_photo1 {
+    top: 135px;
+    left: 80px;
+    width: 350px;
+    height: 280px;
+    /* ---------- */
+  }
+
+  .update_photo2 {
+    top: 40%;
+    right: 5%;
+    width: 400px;
+    height: 450px;
+    /* --------- */
+  }
+
+  .update_photo3 {
+    bottom: -230px;
+    left: 80px;
+    width: 450px;
+    height: 375px;
+    /* -------- */
+  }
+  .update_dot1 {
+    top: 0;
+    right: -40px;
+    /* -------- */
+  }
+  .update_dot3 {
+    bottom: -20%;
+    /* ------ */
+  }
+
+  /* -------------------- */
+  .update_image_section {
+    padding: 50px 50px 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    /* ------- */
+  }
+  .update-div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+
+    /* --------- */
+  }
+  .update-image {
+    margin-right: 0px;
+    /* ------- */
+  }
+
+  .update-header h4 {
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
+    /* --------- */
+  }
+  .update-header p {
+    width: 100%;
+    text-align: center;
+    color: rgb(228, 227, 227);
+    /* --------- */
+  }
+  /* -------------------Services-------------------------- */
+  .services_heading > h1 {
+    padding: 0px 20px;
+    /* --------- */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* --------------- Banner ------------ */
+  .banner_heading h1 {
+    font-size: 3.5rem;
+  }
+  /* -------------------Services-------------------------- */
+  .services_heading > h1 {
+    padding: 0px 20px;
+    font-size: 36px;
+    /* --------- */
+  }
+  .services_section2 {
+    min-height: 100%;
+    padding: 0px;
+    display: block;
+    width: 100%;
+
+    /* --------- */
+  }
+  .service_section_div {
+    display: none;
+    /* --------- */
+  }
+  .service_caraosel {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+  }
+  .service_div_for_caraosal {
+    width: 92%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* -------------------------Update--------------------- */
+  .updatephotos {
+    height: 500px;
+    /* ------ */
+  }
+  .update_photo1 {
+    top: 135px;
+    left: 0px;
+    width: 300px;
+    height: 230px;
+    /* ---------- */
+  }
+
+  .update_photo2 {
+    top: 40%;
+    right: -2%;
+    width: 350px;
+    height: 400px;
+    /* --------- */
+  }
+
+  .update_photo3 {
+    bottom: -230px;
+    left: 0px;
+    width: 400px;
+    height: 325px;
+    z-index: 2;
+    /* -------- */
+  }
+  .update_dot1 {
+    top: 0;
+    right: -40px;
+    /* -------- */
+  }
+
+  /* ---------------------------- Contacts------------------------------ */
+  .contacts_main_container_div {
+    padding: 50px;
+    /* ----------- */
+  }
+  .contacts_main_container {
+    padding-bottom: 50px;
+    /* ------ */
+  }
+  .contacts_main {
+    flex-direction: column;
+    /* ------- */
+  }
+  .contact_headings {
+    width: 100%;
+    /* ---------- */
+  }
+
+  .contact_headings > h2 {
+    text-align: center;
+    /* ------------ */
+  }
+
+  /* ----------------------- */
+  .contact_information {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 40px;
+    align-items: center;
+    /* --------- */
+  }
+  .contact_information > div {
+    width: 80%;
+    /* ------- */
+  }
+  /* -------------------FAQ---------------- */
+  .faq-main_container {
+    min-height: 100%;
+    /* ---------- */
+  }
+  /* ------------------------------Footer---------------- */
+  .dashboard_footer_container {
+    flex-direction: column;
+    /* ----- */
+  }
+  .dashboard_footer_div1 {
+    width: 100%;
+    /* ----- */
+  }
+  .footer_link_section {
+    width: 100%;
+    padding-top: 50px;
+    /* ----- */
+  }
+
+  .dashboard_footer_div1 > p {
+    padding: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* -------------------Banner -------------- */
+  .banner_container_content {
+    padding: 5% 3% 3%;
+    height: 90%;
+  }
+  .banner_heading h1 {
+    font-size: 2.2rem;
+    line-height: 120%;
+    padding-bottom: 10px;
+  }
+  .banner_paragraph {
+    font-size: 16px;
+  }
+  .dot_sytle1 img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+  }
+  .banner_container_section_1 {
+    border-bottom-right-radius: 175px;
+  }
+  /* -------------------------Features----------------------------- */
+
+  .quote_section {
+    height: 100%;
+    padding-top: 50px;
+    /* ------*/
+  }
+  .quote_section p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 10px 30px;
+    text-align: center;
+    /* ----------- */
+  }
+  .feature_dot2 img {
+    display: none;
+    /* ------- */
+  }
+  .quotes-sign {
+    margin: 0px 5px 8px;
+
+    /* ---------- */
+  }
+  .feature_container1 {
+    height: 100px;
+    /* -------- */
+  }
+  .feature_logo img {
+    width: 65%;
+    /* -------- */
+  }
+
+  /* --------- */
+  .feature_container2 {
+    padding: 0 10px;
+    /* ------- */
+  }
+
+  .feature_illustation img {
+    width: 100%;
+    /* ----------- */
+  }
+  /* ----------------- */
+
+  .feature_meetscouts_Meet h1 {
+    font-size: 30px;
+    letter-spacing: 0em;
+    padding: 20px 20px 10px;
+    /* ----------- */
+  }
+  .feature_meetscouts_Meet p {
+    font-size: 14px;
+  }
+  /* ---------------------- */
+  .feature_meethomescouts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* ---- */
+  }
+  .feature_meethomescouts > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* -------- */
+  }
+
+  .feature_meeth_div h4 {
+    font-size: 18px;
+    /* ---- */
+  }
+  .feature_meeth_div p {
+    font-size: 14px;
+    /* --------- */
+  }
+  /* -----------------------Update ------------------------- */
+
+  .main_update_dot3 {
+    display: none;
+  }
+  .updatephotos {
+    height: 300px;
+  }
+  .update_photo1 {
+    width: 110px;
+    height: 100px;
+    top: 100px;
+    left: -25px;
+  }
+  .update_photo2 {
+    width: 200px;
+    height: 250px;
+    top: 70px;
+    right: -25px;
+  }
+
+  .update_photo3 {
+    width: 200px;
+    height: 175px;
+    bottom: -30%;
+    left: -25px;
+  }
+
+  .update_dot1 {
+    display: none;
+  }
+  .update_dot3 {
+    display: none;
+  }
+
+  /* -------------------- */
+  .update_section2 {
+    padding-top: 80px;
+    border-bottom-left-radius: 140px;
+    padding-bottom: 80px;
+
+    /* --------- */
+  }
+  .update_image_section {
+    padding: 15px;
+    row-gap: 40px;
+  }
+  .update-div {
+    width: 100%;
+  }
+  .update-header h4 {
+    font-size: 18px;
+    /* --------- */
+  }
+  .update-header p {
+    font-size: 12px;
+  }
+  /* -------------------Services-------------------------- */
+  .services_section1 {
+    height: 90vh;
+  }
+  .services_heading > h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .services_heading > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 40px;
+  }
+  /* ---------- */
+  .services_section2 {
+    padding: 0px;
+  }
+  .service_section_div {
+    display: none;
+    /* --------- */
+  }
+  .service_caraosel {
+    padding: 0px;
+  }
+  /* -------------------------T E S T I M O N I A L----------------------- */
+  .testimonials_heading_div > h1 {
+    font-size: 28px;
+  }
+  .testimonials_comments_div {
+    padding: 10px;
+  }
+  .testimonials_container {
+    height: fit-content;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .testimonials_heading_div {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* -------------------------- */
+  .testimonials_comments_main_div {
+    height: 325px;
+  }
+  .testimonials_comments_imgheader {
+    height: 250px;
+    width: 325px;
+    padding-top: 35px;
+  }
+  .testimonials_comments_imgheader > p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0em;
+    padding: 15px;
+  }
+  .testimonials_userImage {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials_comma_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .testimonials_comments_username > h5 {
+    text-align: center;
+    width: 100%;
+  }
+  .testimonials_comments_username > p {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+  }
+  /* -----------------------------Contact------------------- */
+  .contact_headings > h2 {
+    font-size: 28px;
+    letter-spacing: 0em;
+    height: 150px;
+    text-align: center;
+  }
+  .contact_information > div {
+    width: 100%;
+  }
+  .contacts_main_container_div {
+    padding: 25px;
+    /* ----------- */
+  }
+  /* ---------FAQ ------------------- */
+  .faq-main_container {
+    min-height: 100%;
+    padding-top: 50px;
+  }
+  .faq_faqimg {
+    width: 80%;
+    bottom: 0;
+  }
+  .faq_header {
+    width: 100%;
+    height: 100px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq_header img {
+    padding: 10px 50px;
+    position: static;
+  }
+  .faq_container_all_feature {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 25px 0px;
+  }
+  .faq_comment p {
+    font-size: 14px;
+  }
+  /* ---------------------------------footer--------------- */
+  .dashboard_footer_div1,
+  .dashboard_footer_div2,
+  .dashboard_footer_div3,
+  .dashboard_footer_div4 {
+    row-gap: 4px;
+    align-items: center;
+  }
+  .dashboard_footer_div1 > h5,
+  .dashboard_footer_div1 > p {
+    text-align: center;
+  }
+  .footer_link_section {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .dashboard_footer {
+    padding: 50px 25px;
+  }
+}

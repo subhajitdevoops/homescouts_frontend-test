@@ -1,0 +1,209 @@
+.PotentialBuyers_mainContainerDiv{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.371);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin0{
+    margin-top: 0px !important;
+}
+.PotentialBuyers_mainContainer{
+    /* margin-top: 120px; */
+    position: relative;
+    border-radius: 20px;
+    width: 900px;
+    height: 70vh;
+    background-color: #fff;
+    padding: 15px;
+    margin: 120px 20px 0px 20px;
+}
+.PotentialBuyers_heading{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    gap: 10px;
+    justify-content: space-between;
+    
+}
+.PotentialBuyers_heading>p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #AF510B;
+}
+.PotentialBuyers_title,.PotentialBuyers_contact{
+    display: flex;
+    background: #006AC2;
+    box-shadow: 0px 4px 4px rgba(0, 142, 255, 0.12);
+    border-radius: 18px;
+    width: 100px;
+    /* height: 25px; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.PotentialBuyers_contactDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.PotentialBuyers_title>span,.PotentialBuyers_contact>span{
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.PotentialBuyers_contact>span{
+    font-weight: 400;
+    font-size: 11px;
+}
+.PotentialBuyers_contact{
+    width: 140px!important;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.PotentialBuyers_user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #ECECEC;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: 98%;
+    margin: 10px;
+    padding: 15px;
+}
+.PotentialBuyers_message{
+    background-color: #fff;
+    padding: 5px;
+}
+.PotentialBuyers_sendIcon{
+    color: #006AC2 !important;
+}
+.PotentialBuyers_user:hover{
+    background: #F4F5F7;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+.PotentialBuyers_userimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* height: 100; */
+}
+.PotentialBuyers_userimage>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.PotentialBuyers_userimage>p{
+    font-size: 17px;
+    color: #AF510B;
+}
+.PotentialBuyers_chatdiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #E5E5E5;
+    margin-right: 5%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.PotentialBuyers_chatIcons{
+    font-size: 35px;
+    color: #9e9999;
+}
+.PotentialBuyers_userMainDiv{
+    overflow: hidden;
+    width: 100%;
+    height: 89%;
+}
+.PotentialBuyers_userDiv{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+.PotentialBuyers_userDiv::-webkit-scrollbar-thumb {
+    background-color: #AF510B;
+}
+@media screen and (max-width:1520px) {
+    /* .PotentialBuyers_mainContainer{
+        margin-top: 120px;
+        width: 600px;
+        height: 70vh;
+        background-color: #fff;
+    }
+    .PotentialBuyers_title{
+        gap: 5px;
+    } */
+ 
+    .PotentialBuyers_mainContainer{
+        border-radius: 15px;
+        max-width: 600px;
+        height: 70vh;
+        padding: 10px;
+    }
+    .PotentialBuyers_heading{
+        padding: 10px 0px;
+        gap: 5px;
+    }
+    .PotentialBuyers_heading>p{
+        font-size: 11px;
+    }
+    .PotentialBuyers_title{
+        width: 80px;
+        gap: 5px;
+        padding: 3px;
+    }
+    .PotentialBuyers_title>span{
+        font-size: 11px;
+    }
+    .PotentialBuyers_user{
+        gap: 10px;
+        border-radius: 10px;
+        width: 98%;
+        margin: 7px;
+        padding: 10px;
+    }
+    .PotentialBuyers_userimage{
+        gap: 20px;
+    }
+    .PotentialBuyers_userimage>img{
+        width: 40px;
+        height: 40px;
+    }
+    .PotentialBuyers_userimage>p{
+        font-size: 13px;
+    }
+    .PotentialBuyers_chatdiv{
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+    }
+    .PotentialBuyers_chatIcons{
+        font-size: 35px;
+    }
+    .PotentialBuyers_userDiv{
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width:600px) {
+    .PotentialBuyers_heading>p {
+        font-size: 11px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,176 @@
+#myRange {
+    width: 100%;
+}
+
+.filter_main_container_div {
+
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 30px;
+    /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box !important;
+    /* So the width will be 100% + 17px */
+
+}
+
+.filtermaincontainer_div {
+    background-color: #fff;
+    margin: 25px 0;
+}
+
+.filter_proporty_heading {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.filter_proporty_container_div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.option_box {
+    border: 2px solid #aaa;
+    border-radius: 50px;
+    padding: 5px 15px;
+    margin: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.option_box:hover {
+    border: 2px solid #aaa;
+    background-color: rgba(13, 110, 253, 0.7);
+    color: #fff;
+    /* opacity: 0.2; */
+}
+
+.filerproperty {
+    border: 2px solid #0d6efd !important;
+    background-color: #0d6efd !important;
+    color: #fff;
+}
+.filter_proporty_location{
+    padding: 5px;
+}
+.filter_proporty_location:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.filter_proporty_Localities_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.filter_proporty_btn_div {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 2px solid #0d6efd !important;
+    background-color: #0d6efd !important;
+    color: #fff;
+    font-size: 13px;
+}
+
+.filter_ApplyAllfilter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 5px;
+}
+
+.Filter_clearAll {
+    color: #0d6efd;
+    cursor: pointer;
+}
+.Filter_MdOutlineCancel{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1366px) {
+    .filter_proporty_heading {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .filter_proporty_container_div {
+        gap: 10px;
+    }
+
+    .option_box {
+        border: 1px solid #aaa;
+        padding: 3px 10px;
+        margin: 3px;
+        font-size: 13px;
+    }
+
+    .option_box:hover {
+        border: 1px solid #aaa;
+    }
+
+    .filerproperty {
+        border: 1px solid #0d6efd !important;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .filter_main_container_div {
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        padding-right: 0px;
+        /* Increase/decrease this value for cross-browser compatibility */
+        box-sizing: content-box !important;
+        /* So the width will be 100% + 17px */
+    }
+
+    .filtermaincontainer_div {
+        padding: 0;
+        box-sizing: border-box;
+        box-shadow: none;
+        border-radius: 0px;
+        padding: 0 15px;
+    }
+
+    .filtermaincontainer_div {
+        margin: 10px 40px;
+        background-color: #f4f5f7;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .filter_main_container_div {
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        padding-right: 0px;
+        /* Increase/decrease this value for cross-browser compatibility */
+        box-sizing: content-box !important;
+        /* So the width will be 100% + 17px */
+    }
+
+    .filtermaincontainer_div {
+        padding: 0;
+        box-sizing: border-box;
+        box-shadow: none;
+        border-radius: 0px;
+        padding: 0 15px;
+    }
+
+    .filtermaincontainer_div {
+        margin: 10px 40px;
+        background-color: #f4f5f7;
+    }
+}

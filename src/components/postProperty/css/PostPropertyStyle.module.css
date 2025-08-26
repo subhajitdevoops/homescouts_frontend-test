@@ -1,0 +1,189 @@
+:root {
+  --According_to_navbar_height_top: 120px;
+  --According_to_navbar_height_top_for_mobile: 90px;
+
+}
+
+.MainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2% 10%;
+  background-color: white;
+  position: relative;
+  top: var(--According_to_navbar_height_top);
+}
+.section1 {
+  min-width: 23%;
+  max-width: 30%;
+  max-height: 100%;
+  padding: 1%;
+  margin-top: 2%;
+  margin-right: 7%;
+  border-radius: 8px;
+  color: black;
+  background-color: rgb(198, 197, 197);
+  position: fixed;
+  top: var(--According_to_navbar_height_top);
+  left: 10%;
+}
+.section2 {
+  padding: 1%;
+  min-width: 63%;
+  margin-left: auto;
+  box-shadow: 0px 0px 4px gray;
+  border-radius: 8px;
+}
+.discart {
+  min-width: 40%;
+  max-width: 50%;
+  max-height: 100%;
+  padding: 5px;
+  margin-top:1%;
+  margin-right: 7%;
+  border-radius: 8px;
+  color: black;
+  position: fixed;
+  background-color: #e5e5e5;
+  top: var(--According_to_navbar_height_top);
+  left: 10%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.discartButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+}
+.discart>button {
+  /* background-color: rgb(198, 197, 197);
+border-color: rgb(198, 197, 197);
+color: #000; */
+}
+/* ------------------------For responsiveness--------------------------- */
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .MainContainer {
+    flex-direction: column;
+    padding: 0px;
+    top: var(--According_to_navbar_height_top_for_mobile);
+  }
+  .section1 {
+    display: none;
+  }
+  .section2 {
+    padding: 1%;
+    min-width: 100%;
+    margin: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+@media  screen and (max-width: 600px) {
+  .discart {
+    margin-top:0%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .MainContainer {
+    flex-direction: column;
+    padding: 0%;
+  }
+  .section1 {
+    font-size: 15px;
+    padding: 1%;
+    min-width: 90%;
+    margin: 1rem auto;
+    max-height: 100%;
+    position: static;
+  }
+  .section2 {
+    padding: 1%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section1 {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {
+ 
+}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .MainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2% 5%;
+    position: relative;
+    top: var(--According_to_navbar_height_top);
+  }
+  .section1 {
+    min-width: 30%;
+    max-width: 30%;
+    max-height: fit-content;
+    margin-top: 2%;
+    margin-right: 3%;
+    padding: 1%;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(198, 197, 197);
+    position: fixed;
+    top: var(--According_to_navbar_height_top);
+    left: 5%;
+  }
+  .section2 {
+    padding: 1%;
+    margin: 0rem 0rem 0rem auto;
+    max-width: 63%;
+    min-width: 63%;
+  }
+}
+/* ------------for progressBar---------- */
+@media only screen and (min-width: 1450px) {
+  .MainContainer {
+    padding: 2% 10%;
+  }
+  .section1 {
+    min-width: 23%;
+    max-width: 30%;
+    max-height: fit-content;
+    padding: 1%;
+    margin-right: 7%;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(198, 197, 197);
+    left: 10%;
+  }
+  .section2 {
+    padding: 1%;
+    min-width: 55%;
+    max-width: 55%;
+    margin-right: 8%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 850px !important;
+  }}

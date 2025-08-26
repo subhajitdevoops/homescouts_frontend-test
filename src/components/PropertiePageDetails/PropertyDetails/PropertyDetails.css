@@ -1,0 +1,57 @@
+.PropertiePageDetails_Atag{
+    display: flex;
+    margin-left: 16%;
+    gap: 50px;
+}
+.PropertiePageDetails_Atag>a{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #3D3D3E;
+}
+.PropertiePageDetails_Atag_div{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.selectelement{
+    font-size: 15px;
+line-height: 20px;
+text-align: center;
+color: #3498DB !important;
+border-bottom: 4px solid #3498DB;
+padding-bottom:15px ;
+border-radius: 0px 0px 5px 5px;
+}
+.pd{
+  padding-top: 250px;
+}
+.PropertiePageDetails_hr{
+    margin-top: -5px;
+}
+.selectAnchorTag{
+    /* padding-top: 205px; */
+}
+#Overviews,#Amenitiess{
+    scroll-margin-top:300px;
+    scroll-behavior: smooth;
+    transition: all 500ms;
+}
+#Overview,#Amenities,#OwnerDetails{
+    scroll-margin-top:220px;
+    scroll-behavior: smooth;
+    transition: all 500ms;
+}
+@media screen and (max-width:1520px) {
+    .PropertiePageDetails_Atag{
+        gap: 30px;
+    }
+    .PropertiePageDetails_Atag>a{
+        font-size: 12px;
+    }
+    .selectelement{
+    color: #3498DB !important;
+    border-bottom: 4px solid #3498DB;
+    padding-bottom:10px ;
+    border-radius: 0px 0px 5px 5px;
+    }
+}

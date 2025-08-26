@@ -1,0 +1,103 @@
+{
+  "name": "homescouts",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.8"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^31.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@kevinpaulconnor/react-icon-picker": "^1.0.0",
+    "@react-oauth/google": "^0.11.1",
+    "@react-pdf/renderer": "^3.1.4",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "apexcharts": "^3.35.5",
+    "axios": "^0.26.0",
+    "bootstrap": "^5.1.3",
+    "caniuse-lite": "^1.0.30001507",
+    "chart.js": "^3.9.1",
+    "cors": "^2.8.5",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "express": "^4.17.3",
+    "html-to-draftjs": "^1.5.0",
+    "imagekit": "^4.1.3",
+    "imagekit-javascript": "^1.5.5",
+    "imagekitio-react": "^2.0.0",
+    "js-cookie": "^3.0.1",
+    "jwt-decode": "^3.1.2",
+    "multi-range-slider-react": "^1.0.7",
+    "package.json": "^0.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-bootstrap": "^2.0.2",
+    "react-bootstrap-range-slider": "^3.0.3",
+    "react-chartjs-2": "^4.3.1",
+    "react-chat-elements": "^12.0.16",
+    "react-data-table-component": "^7.5.3",
+    "react-date-range": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-dropzone": "^12.0.4",
+    "react-google-autocomplete": "^2.7.2",
+    "react-google-login": "^5.2.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-insta-stories": "^2.4.2",
+    "react-modal": "^3.14.4",
+    "react-multi-carousel": "^2.8.2",
+    "react-otp-input-rc-17": "^2.4.1-minor",
+    "react-paginate": "^8.1.3",
+    "react-pdf": "^6.2.2",
+    "react-range": "^1.8.14",
+    "react-router-dom": "^6.14.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-share": "^4.4.1",
+    "react-slick": "^0.28.1",
+    "react-speech-recognition": "^3.9.1",
+    "react-toastify": "^9.1.1",
+    "requirejs": "^2.3.6",
+    "slick-carousel": "^1.8.1",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.6.1",
+    "sweetalert": "^2.1.2",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": "react-scripts --max_old_space_size=4096 build"
+}

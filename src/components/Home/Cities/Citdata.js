@@ -1,0 +1,48 @@
+const data=[{
+    id:1,
+    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPz71l0tzUUL1jRthZYFiWnk5aNemhg0Z_Q&usqp=CAU',
+    name:'Delhi',
+    properties:'170,000'
+},{
+    id:2,
+    image:'https://static.amazon.jobs/locations/23/thumbnails/bangalore-thumb1.jpg?1630709762',
+    name:'Bangalore',
+    properties:'63,000'
+}
+,{
+    id:3,
+    image:'https://media.istockphoto.com/photos/the-mumbai-pune-expressway-picture-id1240837978?k=20&m=1240837978&s=612x612&w=0&h=0bkvZ9XenP_GQnVkjkHhnCP8mUTRZ-m6G-_a885Aqxg=',
+    name:'Pune',
+    properties:'52,000'
+}
+,{
+    id:4,
+    image:'https://im.rediff.com/news/2014/aug/25chennai1.jpg',
+    name:'Chennai',
+    properties:'38,000'
+}
+,{
+    id:5,
+    image:'https://static.toiimg.com/thumb/msid-88428704,width-900,height-1200,resizemode-6.cms',
+    name:'Mumbai',
+    properties:'114,000'
+}
+,{
+    id:6,
+    image:'https://cdn.britannica.com/77/22877-050-9EFB35D4/Charminar-city-Hyderabad-India-Telangana.jpg',
+    name:'Hyderabad',
+    properties:'31,000'
+}
+,{
+    id:7,
+    image:'https://assets-news.housing.com/news/wp-content/uploads/2021/08/04205223/Victoria-Memorial-Kolkata-An-iconic-marble-structure-of-the-British-era-FB-1200x700-compressed.jpg',
+    name:'Kolkata',
+    properties:'29,000'
+}
+,{
+    id:8,
+    image:'https://www.irctctourism.com/packageImage/WAH03/WAH03.jpg',
+    name:'Ahmedabad',
+    properties:'190,000'
+}]
+export default data;

@@ -1,0 +1,288 @@
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.stepBlock {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  min-width: 65%;
+  z-index: 1;
+}
+
+.RhombusWrapper {
+  padding: 0px 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.rhombus {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.rhombus-border {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.stepBlock:not(:last-child) > .RhombusWrapper::after {
+  content: "";
+  width: 3px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 96%;
+  margin: auto;
+  background-color: white;
+  z-index: -1;
+}
+.dot-rhombus {
+  display: grid;
+  place-items: center;
+}
+/* ------------------------selected step style------------------------------- */
+.selected .rhombus-border {
+  background-color: #0061f7;
+}
+
+.stepBlock:not(:last-child).selected > .RhombusWrapper::after,
+.stepBlock:not(:last-child).selected
+  ~ .stepBlock:not(:last-child)
+  > .RhombusWrapper::after {
+  height: 50px;
+}
+.stepBlock:not(:last-child).selected > .RhombusWrapper::after {
+  background-color: #0061f7;
+}
+.selected .dot-rhombus {
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: #0061f7;
+}
+
+/* ----------------------------------step complete style------------------------------ */
+
+.complete .rhombus-border {
+  background-color: #0061f7;
+}
+.complete .dot-rhombus {
+  width: 25px;
+  height: 25px;
+  transition: none;
+}
+
+.stepBlock:not(:last-child).complete > .RhombusWrapper::after,
+.stepBlock:not(:last-child).complete
+  ~ .stepBlock:not(:last-child)
+  > .RhombusWrapper::after {
+  height: 50px;
+}
+.stepBlock:not(:last-child).complete > .RhombusWrapper::after {
+  background-color: #0061f7;
+}
+/* -----------------------Step label---------------------- */
+.span {
+  margin: auto 0;
+  padding: 0 5px;
+  text-align: left;
+  display: inline-block;
+  font-size: 90%;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------For responsiveness--------------------------- */
+
+/* ------------------------------------------------------------------------------ */
+@media only screen and (max-width: 840px) {
+  .stepBlock:not(:last-child) > .RhombusWrapper::after {
+    width: 145px !important;
+  }
+  .stepBlock {
+    min-width: 130px !important;
+  }
+}
+/* ------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 795px) {
+  .stepBlock:not(:last-child) > .RhombusWrapper::after {
+    width: 135px !important;
+  }
+  .stepBlock {
+    min-width: 110px !important;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+  .stepWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  .stepBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    min-width: 150px;
+  }
+
+  .RhombusWrapper {
+    padding: 5px 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .stepBlock:not(:last-child) > .RhombusWrapper::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    z-index: -1;
+  }
+
+  /* ------------------------selected step style------------------------------- */
+  .stepBlock:not(:last-child).selected > .RhombusWrapper::after,
+  .stepBlock:not(:last-child).selected
+    ~ .stepBlock:not(:last-child)
+    > .RhombusWrapper::after {
+    height: 3px;
+  }
+
+  /* ----------------------------------step complete style------------------------------ */
+
+  .stepBlock:not(:last-child).complete > .RhombusWrapper::after,
+  .stepBlock:not(:last-child).complete
+    ~ .stepBlock:not(:last-child)
+    > .RhombusWrapper::after {
+    height: 3px;
+  }
+}
+/* ----------------------------------------------------------------
+---------------------------------------------------------------- */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  .stepWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  .stepBlock {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    min-width: 65%;
+  }
+
+  .RhombusWrapper {
+    padding: 0px 5px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .rhombus {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  .rhombus-border {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .stepBlock:not(:last-child) > .RhombusWrapper::after {
+    content: "";
+    width: 3px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 96%;
+    margin: auto;
+    background-color: white;
+    z-index: -1;
+  }
+  .dot-rhombus {
+    display: grid;
+    place-items: center;
+  }
+  /* ------------------------selected step style------------------------------- */
+  .selected .rhombus-border {
+    background-color: #0061f7;
+  }
+
+  .stepBlock:not(:last-child).selected > .circleWrapper::after,
+  .stepBlock:not(:last-child).selected
+    ~ .stepBlock:not(:last-child)
+    > .circleWrapper::after {
+    height: 50px;
+  }
+  .stepBlock:not(:last-child).selected > .RhombusWrapper::after {
+    background-color: #0061f7;
+  }
+  .selected .dot-rhombus {
+    width: 25px;
+    height: 25px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #0061f7;
+  }
+
+  /* ----------------------------------step complete style------------------------------ */
+
+  .complete .rhombus-border {
+    background-color: #0061f7;
+  }
+  .complete .dot-rhombus {
+    width: 25px;
+    height: 25px;
+    transition: none;
+  }
+
+  .stepBlock:not(:last-child).complete > .RhombusWrapper::after,
+  .stepBlock:not(:last-child).complete
+    ~ .stepBlock:not(:last-child)
+    > .RhombusWrapper::after {
+    height: 50px;
+  }
+  .stepBlock:not(:last-child).complete > .RhombusWrapper::after {
+    background-color: #0061f7;
+  }
+  /* -----------------------Step label---------------------- */
+  .span {
+    margin: auto 0;
+    padding: 0 5px;
+    text-align: left;
+    display: inline-block;
+  }
+}

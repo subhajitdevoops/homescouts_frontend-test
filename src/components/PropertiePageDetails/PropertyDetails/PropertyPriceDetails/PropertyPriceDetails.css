@@ -1,0 +1,390 @@
+.PropertyPriceDetails_main_container_div {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.PropertyPriceDetails_Page_date_details {
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 7px;
+}
+
+.PropertyPriceDetails_page_details,
+.PropertyPriceDetails_date_details {
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #999999;
+}
+
+.PropertyPriceDetails_date_details {}
+
+.PropertyPriceDetails_verified {
+
+    background: #28AD35;
+    border: 1px solid #28AD35;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0px 10px;
+    gap: 5px;
+    font-size: 15px;
+    margin-right: 6px;
+
+}
+
+.PropertyPriceDetails_verified p {
+    font-size: 13px;
+}
+
+.PropertyPriceDetails_feature {
+    background-color: #DB0864;
+    border: 1px solid #DB0864;
+
+    border-radius: 3px;
+}
+
+.PropertyPriceDetails_image_price_Button {
+    gap: 15px;
+}
+
+.PropertyPriceDetails_image {
+    width: 15%;
+}
+
+.PropertyPriceDetails_image>div>img {
+    width: 196px;
+    height: 196px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.118) 22.9%), linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 15.96%, rgba(0, 0, 0, 0) 33.17%), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 10.02%, rgba(0, 0, 0, 0) 25.18%);
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 22px;
+}
+
+.PropertyPriceDetails_price {
+    width: 70%;
+}
+
+.PropertyPriceDetails_Button {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.PropertyPriceDetails_Button_contact {
+    width: 70%;
+    background-color: #3498DB;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+}
+.PropertyPriceDetails_Buttons{
+    width: 100%;
+    background-color: #3498DB;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.PropertyPriceDetails_Button_contact>span {
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.PropertyPriceDetails_Button_shortlist {
+    width: 70%;
+    color: #F69C10;
+    border: 1px solid #F69C10;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.PropertyPriceDetails_ButtonShortlist{
+    width: 70%;
+    background-color: #F69C10;
+    border: 1px solid #F69C10;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.PropertyPriceDetails_ToggleButton{
+    display: flex;
+    background-color: #999999;
+    
+}
+.PropertyPriceDetails_very_feat_icon {
+    justify-content: start;
+}
+
+.PropertyPriceDetails_Price_details {
+    justify-content: start;
+    gap: 10px;
+}
+
+.PropertyPriceDetails_priceofproperty {
+    align-items: flex-end;
+}
+
+.PropertyPriceDetails_priceofproperty>h6 {
+    font-size: 36px;
+    line-height: 49px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.PropertyPriceDetails_priceofproperty>h6>span {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.PropertyPriceDetails_priceofproperty>p {
+    font-size: 16px;
+    line-height: 27px;
+    opacity: 0.8;
+}
+
+.PropertyPriceDetails_detailsOfproperty {
+    display: flex;
+    flex-direction: column;
+}
+
+.PropertyPriceDetails_detailsOfproperty>h5 {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400px;
+    color: #666666;
+}
+
+.PropertyPriceDetails_detailsOfproperty>h6 {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #999999;
+}
+
+.PropertyPriceDetails_detailsOfproperty>p {
+    font-size: 11px;
+    line-height: 15px;
+    color: #999999;
+}
+
+.PropertyPriceDetails_sepretor {
+    width: 0px;
+    height: 93px;
+    margin: 2px;
+    border: 1px solid #000000;
+}
+.PropertyPriceDetails_UpToDate{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DB0864;
+}
+.PropertyPriceDetails_NewVerified{
+    border: 1px solid #15C05D;
+    border-radius: 3px;
+    color: #15C05D;
+    /* width: 100px; */
+    height: 50px;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+.PropertyPriceDetails_NewVerifieds{
+    border: 1px solid #15C05D;
+    border-radius: 3px;
+    color: #fff;
+    /* width: 100px; */
+    background-color: #15C05D;
+    height: 50px;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+.PropertyPriceDetails_NewVerified>p, .PropertyPriceDetails_NewVerifieds>p{
+    font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+}
+.PropertyPriceDetails_newFeature{
+    color: #DB0864;
+    border: 1px solid #DB0864;
+    margin: 0 10px;
+    position: relative;
+
+}
+.PropertyPriceDetails_newFeatureSelected{
+    background-color: #DB0864;
+    color: #fff;
+    border: 1px solid #DB0864;
+    margin: 0 10px;
+    position: relative;
+
+}
+.PropertyPriceDetails_newFeatCalender{
+    z-index: 2;
+    position: absolute;
+    top: 95px;
+    border-radius: 10px;
+}
+
+.inputCalender[type="date"]:focus + .calendar-button,
+.inputCalender[type="date"]:hover + .calendar-button {
+  display: block;
+}
+/* Keep the calendar button visible when input is focused */
+input[type="date"]:focus + .calendar-button,
+input[type="date"]:hover + .calendar-button,
+.calendar-button:hover {
+  display: block !important;
+}
+.rdrCalendarWrapper {
+    background: #eff0f6 !important;
+    border-radius: 5px;
+  box-shadow: 0px 2px 13px rgba(5, 0, 255, 0.16);
+
+}
+
+
+@media screen and (max-width:1800px) {}
+
+@media screen and (max-width:1520px) {
+    .PropertyPriceDetails_verified {
+        padding: 0px 10px;
+        gap: 5px;
+        font-size: 15px;
+    }
+
+    .PropertyPriceDetails_verified p {
+        font-size: 10px;
+    }
+
+    .PropertyPriceDetails_page_details,
+    .PropertyPriceDetails_date_details {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .PropertyPriceDetails_verified {
+        padding: 0px 8px;
+        gap: 5px;
+        font-size: 16px;
+        margin-right: 6px;
+    }
+
+    .PropertyPriceDetails_verified p {
+        font-size: 10px;
+    }
+
+    .PropertyPriceDetails_image {
+        width: 15%;
+    }
+
+    .PropertyPriceDetails_image>div>img {
+        width: 140px;
+        height: 140px;
+        border: 4px solid #FFFFFF;
+        box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 18px;
+    }
+
+    .PropertyPriceDetails_price {
+        width: 70%;
+    }
+
+    .PropertyPriceDetails_Button {
+        width: 15%;
+        gap: 10px;
+    }
+
+    .PropertyPriceDetails_Button_contact {
+        width: 80%;
+        font-size: 12px;
+
+    }
+
+    .PropertyPriceDetails_Button_contact>span {
+        font-size: 9px;
+        margin-top: -5px;
+    }
+
+    .PropertyPriceDetails_Button_shortlist ,.PropertyPriceDetails_ButtonShortlist{
+        width: 80%;
+    }
+
+    .PropertyPriceDetails_priceofproperty>h6 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .PropertyPriceDetails_priceofproperty>h6>span {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .PropertyPriceDetails_priceofproperty>p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .PropertyPriceDetails_detailsOfproperty>h5 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .PropertyPriceDetails_detailsOfproperty>h6 {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .PropertyPriceDetails_detailsOfproperty>p {
+        font-size: 9px;
+    }
+
+    .PropertyPriceDetails_sepretor {
+        width: 0px;
+        height: 70px;
+    }
+    .PropertyPriceDetails_UpToDate{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:850px) {
+    .PropertyPriceDetails_main_container_div {
+        display: none;
+    }
+
+    .PropertiePageDetails_Atag_div {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .PropertiePageDetails_Atag_div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}

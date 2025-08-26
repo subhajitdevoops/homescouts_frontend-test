@@ -1,0 +1,528 @@
+.ServiceProvider_main_contain_div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 70px;
+  gap: 30px;
+  position: relative;
+}
+.ServiceProvider_Service_offering_div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.ServiceProvider_Service_offeringTitle {
+  width: 30%;
+}
+.ServiceProvider_Service_offeringTitle > h6,
+.AttachDoc_name > h6 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+.ServiceProvider_input {
+  width: 60%;
+}
+.ServiceProvider_Service_offeringINput {
+  /* width: 50%; */
+  background-color: #ffffff;
+  border: 0.5px solid #006ac2;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ErrorBorderBox {
+  border: 0.5px solid #fd0000 !important;
+}
+.ErrorBorderDash > img {
+  border: 2px dashed #fd0000 !important;
+}
+.ServiceProvider_Service_offeringINput > input {
+  width: 90%;
+  background-color: #ffffff;
+  border: 0.5px solid #006ac2;
+  border-radius: 9px;
+  margin-left: 2px;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 5px;
+}
+.ServiceProvider_Service_offeringINput > input::placeholder {
+  font-size: 21px;
+}
+.ServiceProvider_Select_youroffering_div {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.ServiceProvider_Select_youroffering {
+  width: 30%;
+}
+.ServiceProvider_Select_youroffering > h6 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+.ServiceProvider_SelectOfferingList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.ServiceProviderSelectOffer {
+  background: #ed6823 !important;
+  color: #fff !important;
+  border: 1px solid #ed6823;
+}
+.ServiceProvider_SelectOffer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #0078db;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #696f79;
+  cursor: pointer;
+}
+.ServiceProvider_SelectOfferIcon {
+  width: 38px;
+  height: 38px;
+}
+.AttachDoc_mainContainer_div {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.ServicePiEyeDuotoneA{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+.AttachDoc_name {
+  width: 30%;
+}
+.AttachDoc_DocPdf {
+  width: 70%;
+  background-color: #ffffff;
+  border: 2px dashed #ed6823;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7%;
+  cursor: pointer;
+}
+.AttachDoc_DocPdf > p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.7;
+}
+.AttachDoc_PDFIcon {
+  width: 57px;
+  height: 60px;
+  background-color: #ed6823;
+  opacity: 0.7;
+  border: 2px dashed #ed6823;
+  border-radius: 10px;
+  color: #fff;
+  padding: 5px;
+}
+.ServiceProvider_AttachDoc_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  /* align-items: center; */
+  position: relative;
+}
+.ServiceProvider_AttachDoc_div > h3 {
+  width: 30%;
+  font-weight: 500;
+  font-size: 25px;
+  color: #ed6823;
+}
+.DLoader {
+  width: 25px;
+  height: 25px;
+  border: 5px solid #c5c7ca;
+  border-bottom-color: #ed6823;
+  border-radius: 50%;
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .ServicePiEyeDuotone {
+  position: absolute;
+  right: 26px;
+  top: 12px;
+} */
+.ServiceProvider_ServiceLocation {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.ServiceProvider_Location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px dashed #0078db;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #696f79;
+}
+.ServiceProvider_Service_Button {
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #0078db;
+  color: #fff;
+  margin: 2px;
+  padding: 2px;
+}
+.ServiceProvider_AsnapOffer_div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* padding: 30px 0; */
+  position: relative;
+}
+.ServiceProvider_AsnapOffer_div > img {
+  width: 160px;
+  height: 160px;
+  border: 2px dashed #006ac2;
+  border-radius: 10px;
+}
+.ServiceProvider_AddImageLabel {
+  width: 160px;
+  height: 160px;
+  background: #ffffff;
+  border: 2px dashed #ed6823;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.ServiceProvider_AddImageIcon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  color: #fff;
+}
+.ServiceProvider_AddImageIcon:hover {
+  display: block;
+}
+.ServiceProviderAddImg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  height: 160px;
+}
+.ServiceLoadersMainDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: #8b8b8b7d;
+}
+.ServiceLoadersDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: #8b8b8b7d;
+}
+
+.ServiceProviderAddImage {
+  display: none;
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.ServiceProviderAddImg:hover .ServiceProviderAddImage {
+  display: block;
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ServiceProvider_SubmitButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px;
+}
+.ServiceProvider_SubmitButton > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 6px;
+  background: #0078db;
+  border: 1px solid #0078db;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.ServiceProvider_SubmitButtonIcon {
+  color: #8bc34a;
+  font-size: 45px;
+}
+.ServiceProvider_image > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.ServiceProvider_cancel_div {
+  display: none;
+}
+.ServiceProviderAddImg:hover .ServiceProvider_cancel_div {
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  font-size: 20px;
+  color: red;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width: 1520px) {
+  .ServiceProviderAddImg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+  }
+  .ServiceLoadersMainDiv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: #8b8b8b7d;
+  }
+  .ServiceLoadersDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px t;
+    height: 90px;
+    background-color: #8b8b8b7d;
+  }
+  .ServiceProvider_main_contain_div {
+    padding: 50px;
+    gap: 15px;
+  }
+  .ServiceProvider_Service_offering_div {
+    gap: 10px;
+  }
+  .ServiceProvider_Service_offeringTitle > h6,
+  .AttachDoc_name > h6 {
+    font-size: 13px;
+  }
+  .ServiceProvider_Service_offeringINput {
+    /* width: 40%; */
+    border-radius: 5px;
+    /* min-height: 20px; */
+  }
+  .ServiceProvider_Service_offeringINput > input {
+    border-radius: 5px;
+    font-size: 11px;
+    min-height: 20px !important;
+  }
+  .ServiceProvider_Service_offeringINput > input::placeholder {
+    font-size: 11px;
+  }
+  .ServiceProvider_Select_youroffering_div {
+    gap: 15px;
+  }
+  .ServiceProvider_Select_youroffering > h6 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 30px;
+    padding-top: 5px;
+  }
+  .ServiceProvider_SelectOfferingList {
+    gap: 5px;
+  }
+  .ServiceProvider_SelectOffer {
+    padding: 5px 10px;
+    gap: 6px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .ServiceProvider_SelectOfferIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .AttachDoc_mainContainer_div {
+    gap: 15px;
+  }
+  .AttachDoc_DocPdf {
+    border-radius: 5px;
+    padding: 5px 20px;
+    position: relative;
+  }
+  .AttachDoc_DocPdf > p {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: #000000;
+    opacity: 0.7;
+  }
+  .AttachDoc_PDFIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1px;
+  }
+  .ServiceProvider_AttachDoc_div {
+    gap: 10px;
+  }
+  .ServiceProvider_AttachDoc_div > h3 {
+    font-size: 13px;
+  }
+  .ServiceProvider_ServiceLocation {
+    gap: 10px;
+  }
+  .ServiceProvider_Location {
+    padding: 5px;
+    gap: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  .ServiceProvider_AsnapOffer_div {
+    gap: 15px;
+    /* padding: 30px 0; */
+  }
+  .ServiceProvider_AsnapOffer_div > img {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .ServiceProvider_AddImageLabel {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .ServiceProvider_AsnapOffer_div > button {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .ServiceProvider_AddImageIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .ServiceProviderAddImg:hover .ServiceProviderAddImage {
+    width: 40px;
+    height: 40px;
+  }
+  .ServiceProvider_SubmitButton {
+    margin: 30px;
+  }
+  .ServiceProvider_SubmitButton > button {
+    padding: 5px 10px;
+    gap: 6px;
+    background: #0078db;
+    border: 1px solid #0078db;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .ServiceProvider_SubmitButtonIcon {
+    color: #8bc34a;
+    font-size: 25px;
+  }
+  .ServiceProvider_image > img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ProfileBody_container_div {
+    padding-top: 0px !important;
+  }
+  .ServiceProvider_main_contain_div {
+    padding: 10px !important;
+  }
+  .ServiceProvider_Service_offeringTitle {
+    width: 30%;
+  }
+  .ServiceProvider_Service_offeringINput {
+    /* width: 70%; */
+  }
+  .ServiceProvider_Service_offeringTitle > h6,
+  .AttachDoc_name > h6 {
+    line-height: 1 !important;
+  }
+  .ServiceProvider_Location {
+    padding: 2px;
+    gap: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+}

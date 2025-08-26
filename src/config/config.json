@@ -1,0 +1,175 @@
+{
+    "REGISTRATION_INDIVIDUAL_URL": "https://homescouts.in/api/user/registration",
+
+    "REGISTRATION_INDIVIDUAL_OTP_URL": "https://homescouts.in/api/user/registration/otpverify",
+
+    "REGISTRATION_WITH_GOOGLE_URL":"https://homescouts.in/api/user/googleregistration",
+
+    "USER_LOGIN_URL":"https://homescouts.in/api/user/login",
+
+    "USER_GOOGLE_LOGIN_URL":"https://homescouts.in/api/user/googlelogin",
+
+    "MAIL_RESET_PASSWORD_URL":"https://homescouts.in/api/user/resetpassword",
+
+    "RESET_PASSWORD_URL":"https://homescouts.in/api/userlogin/sbrresetpwd",
+
+    "RESET_PASSWORD_VERIFY_OTP":"https://homescouts.in/api/user/resetotpverify",
+
+    "SET_NEW_PASSWORD_URL":"https://homescouts.in/api/user/setpassword",
+
+    "ADMIN_LOGIN_URL":"https://homescouts.in/api/admin/login",
+
+    "ADMIN_CHANGE_PASSWPORD_URL":"https://homescouts.in/api/admin/changepassword",
+    
+    "DYNAMIC_AND_LANDING_PAGE_GET_URL":"https://homescouts.in/api/adminservice/dynamichomepage",
+
+    "POST_PROPERTY_POST_DETAILS_URL":"https://homescouts.in/api/userService/postpropertydata",
+
+    "POST_PROPERTY_GET_DETAILS_URL":"https://homescouts.in/api/userService/incompletepostpropertydata",
+
+    "MEDIA_LINK_DYANMIC_URL":"https://homescouts.in/api/media/dynamicHomepage",
+
+    "DISCART_POSTPROPERTY_URL":"https://homescouts.in/api/userService/discardpostpropertydata",
+
+    "COUNTINUE_INCOMPLETE_POSTPROPERTY_URL":"https://homescouts.in/api/userService/incompletepostpropertydata",
+
+    "ADMIN_SERVICE_PROPERTY_SETTING_URL":"https://homescouts.in/api/adminservice/propertysettings",
+
+    "ADMIN_SERVICE_PROPERTY_SETTING_GET_URL":"https://homescouts.in/api/adminservice/propertysettings",
+
+    "ADMIN_SERVICE_ADD_FURNISHED_URL":"https://homescouts.in/api/adminservice/addfurnishing",
+
+    "ADMIN_SERVICE_ADD_FURNISHED_GET_URL":"https://homescouts.in/api/adminservice/getfurnishing",
+
+    "ADMIN_SERVICE_MASTER_SETTING_URL":"https://homescouts.in/api/adminservice/addservicesettings",
+
+    "ADMIN_SERVICE_MASTER_SETTING_GET_URL":"https://homescouts.in/api/adminservice/servicesettings",
+
+    "ADMIN_SERVICE_MASTER_SETTING_DELETE_URL":"https://homescouts.in/api/adminservice/deleteservice",
+
+    "ADMIN_SERVICE_MASTER_SETTING_ACTIVE_DEACTIVE_URL":"https://homescouts.in/api/adminservice/activeinactiveservice",
+
+    "MEDIA_LINK_UPLOAD_SERVICE_SETTING_URL":"https://homescouts.in/api/media/serviceSettings",
+
+    "USER_SERVICE_FURNISHED_GET_URL":"https://homescouts.in/api/userservice/getfurnishing",
+
+    "USER_SERVICE_APPLY_POST_URL":"https://homescouts.in/api/userService/applyforservices",
+
+    "USER_SERVICE_APPLY_GET_URL":"https://homescouts.in/api/userService/getapplyforservices",
+
+    "USER_SERVICE_LISTING_DETAILS_GET_URL":"https://homescouts.in/api/userService/serviceslisting",
+
+    "ADMIN_SERVICE_PENDING_LIST_GET_URL":"https://homescouts.in/api/adminservice/pendingservices",
+
+    "ADMIN_SERVICE_PENDING_LIST_POST_URL":"https://homescouts.in/api/adminservice/statuschangeservices",
+
+    "ADMIN_SERVICE_PENDING_PROPERTY_GET_URL":"https://homescouts.in/api/adminservice/pendingproperty",
+
+    "ADMIN_SERVICE_PENDING_PROPERTY_POST_URL":"https://homescouts.in/api/adminservice/statuschangepostproperty",
+
+    "ADMIN_SERVICE_PIN_MENU_GET_URL":"https://homescouts.in/api/userService/serviceslistingsettings",
+
+    "GET_PROPERTY_BY_USER_ID_URL":"https://homescouts.in/api/userService/getpropertybyuserid",
+
+    "GET_ALL_PROPERTY_URL":"https://homescouts.in/api/userService/getallproperty",
+
+    "GET_ALL_PROPERTY_BY_PROPERTY_ID_URL":"https://homescouts.in/api/userService/getallproperty",
+
+    "VISITOR_COUNTER_BY_ID_URL":"https://homescouts.in/api/userService/visitorcounterbyid?_id=",
+
+    "ADMIN_SERVICE_GET_USER_LIST_GET_URL":"https://homescouts.in/api/adminservice/getuserlist",
+
+    "USER_COMMON_SERVICE_POST_URL":"https://homescouts.in/api/commonService/fileupload",
+
+    "USER_CHATS_GET_URL":"https://homescouts.in/api/userService/getchatbyuserid",
+
+    "COMMON_MEDIA_LINK_URL":"https://homescouts.in/api/media",
+
+    "ADMIN_SERVICE_REPORT_LIST_GET_URL":"https://homescouts.in/api/adminservice/reportlisting",
+
+    "ADMIN_SERVICE_LISTING_BY_ID_GET_URL":"https://homescouts.in/api/adminservice/serviceslistingbyid",
+
+    "USER_SERVICE_LISTING_BY_ID_GET_URL":"https://homescouts.in/api/userService/serviceslistingbyid",
+
+    "ADMIN_SERVICE_GET_USER_BY_ID_GET_URL":"https://homescouts.in/api/adminservice/getuserbyid",
+
+    "ADMIN_GET_PROPERTY_USER_BY_ID_GET_URL":"https://homescouts.in/api/adminservice/getpropertybyuserid",
+
+    "ADMIN_ACTIVE_INACTIVE_BY_USER_ID_POST_URL":"https://homescouts.in/api/adminservice/activeinactivebyuserid",
+
+    "USER_STATUS_UPDATE_DATA_POST_URL":"https://homescouts.in/api/userService/statusupdate",
+
+    "USER_GET_STATUS_BY_LOCATION_GET_URL":"https://homescouts.in/api/userService/getstatusbylocation",
+
+    "USER_GET_USER_PROFILE_URL":"https://homescouts.in/api/userservice/getprofile",
+
+    "USER_CHANGE_PASSWORD_POST_URL":"https://homescouts.in/api/userService/otpsentforchangepassword",
+
+    "USER_CHANGE_PASSWORD_OTP_VERIFY_POST_URL":"https://homescouts.in/api/userService/otpverifyforchangepassword",
+
+    "USER_CHANGE_EMAIL_POST_URL":"https://homescouts.in/api/userService/otpsentforchangeemail",
+
+    "USER_CHANGE_EMAIL_OTP_VERIFY_POST_URL":"https://homescouts.in/api/userService/otpverifyforchangeemail",
+
+    "USER_CHANGE_PHONE_POST_URL":"https://homescouts.in/api/userService/phonenumberotpsent",
+
+    "USER_CHANGE_PHONE_OTP_VERIFY_POST_URL":"https://homescouts.in/api/userService/phonenumberotpverify",
+
+    "USER_UPDATE_PROFILE_POST_URL":"https://homescouts.in/api/userservice/updateprofile",
+
+    "USER_NOTIFICATION_GET_URL":"https://homescouts.in/api/userservice/notification",
+
+    "USER_NOTIFICATION_POST_URL":"https://homescouts.in/api/userservice/notification",
+
+    "ADMIN_SERVICE_FEATURE_URL":"https://homescouts.in/api/adminservice/feature",
+
+    "ADMIN_SERVICE_VERIFY_PROPERTY_URL":"https://homescouts.in/api/adminservice/verifyproperty",
+
+    "USERGET_CHAT_BY_USERID_GET_URL":"https://homescouts.in/api/userService/getchatbyuserid",
+
+    "USER_ENQUIRY_POST_URL":"https://homescouts.in/api/userService/enquiry",
+
+    "USER_SERVICE_CREATE_REPORT":"https://homescouts.in/api/userService/createreport",
+
+    "ADMIN_SERVICE_DASHBOARD_URL":"https://homescouts.in/api/adminservice/dashboard",
+
+    "ADMIN_SERVICE_STATUS_CHANGE_REPORT_URL":"https://homescouts.in/api/adminservice/statuschangereport",
+
+    "USER_SERVICE_dYNAMICFILTER_OPTION_URL":"https://homescouts.in/api/userservice/dynamicfilteroption",
+
+    "USER_SERVICE_PROPERTY_SHORTLIST_URL":"https://homescouts.in/api/userService/propertysortlist",
+
+    "USER_SERVICE_SERVICE_SHORTLIST_URL":"https://homescouts.in/api/userService/servicesortlist",
+
+    "USER_SERVICE_ACTIVE_INACTIVE_POST_URL":"https://homescouts.in/api/userService/servicactiveinactive",
+
+    "USER_SERVICE_SERVICE_SHORTLIST_GET_URL":"https://homescouts.in/api/userService/servicesortlist",
+
+    "USER_PROPERTY_ACTIVE_INACTIVE_POST_URL":"https://homescouts.in/api/userService/propertyactiveinactive",
+
+    "USER_COMMON_SERVICE_CONTACT_POST_URL":"https://homescouts.in/api/commonService/contact",
+
+    "ADMIN_SERVICE_CONTACT_GET_URL":"https://homescouts.in/api/adminservice/contact",
+
+    "USER_SERVICE_VERIFY_PHONE_URL":"https://homescouts.in/api/userService/phonenumberchecking",
+
+    "USER_SERVICE_GET_SERVICE_BY_ID_URL":"https://homescouts.in/api/userService/getservicesbyserviceid",
+
+    "USER_SERVICE_VISITOR_COUNTER_BY_ID_URL":"https://homescouts.in/api/userService/visitorcounterbyserviceid",
+
+    "USER_SERVICE_CHAT_BLOCK_URL":"https://homescouts.in/api/userService/blockchatbychatid",
+
+    "USER_SERVICE_DELETE_CHAT_ROOM_URL":"https://homescouts.in/api/userService/deletechatroom",
+
+    "GOOGLE_LOGIN_CLIENT_ID":"120635441102-ee0bp7mp5aai98e8rq77pjpru0ph08k3.apps.googleusercontent.com",
+
+    "IMAGEKIT_PUBLIC_KEY":"public_GFf4EuKq8XnBRagNyroULr8r4MY=",
+
+    "IMAGEKIT_URL_END_POINT":"https://ik.imagekit.io/homescouts",
+
+    "IMAGEKIT_AUTHENDTICATION_ENDPOINT":"https://homescouts.in/auth",
+
+    "MAP_MY_INDIA_API_KEY":"cff82de8f0bcabe73cb5cfc16a994d47"
+    
+
+}

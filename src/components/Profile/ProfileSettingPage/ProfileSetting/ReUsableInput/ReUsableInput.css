@@ -1,0 +1,300 @@
+.error{
+    border: 2px solid #FF0000 !important;
+    /* color:#FF0000; */
+  }
+.ReUsableInput_changeEmail{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ReUsableInput_paragraph_div{
+    width:30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+.ReUsableInput_paragraph_div>h6{
+    font-weight: 700;
+    font-size: 25px;
+}
+.ReUsableInput_oldEmail_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 10px;
+    border: 0.5px solid #006AC2;
+}
+.ReUsableInput_oldEmail_div>input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* border: 0.5px solid #006AC2; */
+    border-radius: 9px;
+    width: 90%;
+    height: 57px;
+    font-size: 25px;
+    padding: 5px;
+}
+.ReUsableInput_oldEmail_div>input::placeholder{
+    font-size: 25px;
+}
+.ReUsableInput_RiPencilFillicon{
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    color: #C7872E;
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+.ReUsableInput_error_div{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.ReUsableInput_error_div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.ReUsableInput_GoUnverified{
+    color: #FF5A4F;
+    font-size: 25px;
+}
+.ReUsableInput_MdVerifiedUser{
+    color: #27AE60;
+    font-size: 25px;
+}
+.ReUsableInput_ErrorVerifiedUser{
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #1876F2;
+    cursor: pointer;
+}
+.ReUsableInput_ErrorUnVerifiedUser{
+    font-size: 11px;
+    line-height: 11px;
+    color: #FF0000;
+}
+/* ------------------------ReUsableInputOtp--------------------- */
+.ReUsableInputOtp_input_div{
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+ 
+}
+.ReUsableInputOtp_input_div>input{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 25px;
+   text-align: center;
+}
+.ReUsableVerifyButton_Verifybutton{
+    position: absolute;
+    bottom: 6%;
+    right: 6%;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.ReUsableVerifyButton_button{
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 20px;
+    height: 60px;
+    background-color: #008EFF;
+    border-radius: 9px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0.3;
+}
+.ReUsableVerifyButton_buttonOpacity{
+    opacity: 1;
+}
+.ReUsableInputOtp_input_div>p{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #008EFF;
+    cursor: pointer;
+    opacity: 0.4;
+}
+#ReUsableInputOtp_resetotp{
+    opacity: 1;
+}
+.ReUsableInputOtp_input_div>span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px;
+    text-align: right; 
+    color: #FF0000;
+}
+/* --------ReUsableInputOtp_react_otp_input---------- */
+.ReUsableInputOtp_react_otp_input{
+    width: 50px !important;
+    min-height: 50px;
+    margin: 7px 8px;
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 60%);
+    background-color: #fff;
+  }
+  .ReUsableInputOtp_react_otp_input:focus{
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 60%) !important;
+  }
+@media screen and (max-width:1520px) {
+    .ReUsableInput_changeEmail{
+        width: 100%;
+        height: 40px;
+        gap: 10px;
+    }
+    .ReUsableInput_paragraph_div{
+        /* width: 20%; */
+        padding-left: 0px;
+    }
+    .ReUsableInput_paragraph_div>h6{
+        font-size: 15px;
+    }
+    .ReUsableInput_oldEmail_div{
+        width: 50%;
+        border-radius: 5px;
+    }
+    .ReUsableInput_oldEmail_div>input{
+        width: 90%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .ReUsableInput_oldEmail_div>input::placeholder{
+        font-size: 15px;
+    }
+    .ReUsableInput_RiPencilFillicon{
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin: 3px;
+    }
+    .ReUsableInput_error_div{
+        width: 20%;
+        gap: 10px;
+    }
+    .ReUsableInput_GoUnverified{
+        font-size: 15px;
+    }
+    .ReUsableInput_MdVerifiedUser{
+        font-size: 15px;
+    }
+    .ReUsableInput_ErrorVerifiedUser{
+        font-size: 11px;
+    }
+    .ReUsableInput_ErrorUnVerifiedUser{
+        font-size: 9px;
+    }
+    /* ------------------------ReUsableInputOtp--------------------- */
+.ReUsableInputOtp_input_div{
+    gap: 5px;
+}
+/* ------------------------ReUsableInputOtp--------------------- */
+.ReUsableInputOtp_input_div>input{
+    width: 40px;
+    max-height: 30px;
+    font-size: 15px;
+}
+.ReUsableVerifyButton_Verifybutton{
+    position: absolute;
+    bottom: 6%;
+    right: 6%;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.ReUsableVerifyButton_button{
+    font-size: 15px;
+    line-height: 30px;
+    color: #FFFFFF;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;   
+}
+.ReUsableInputOtp_input_div>p{
+    font-size: 11px;
+}
+.ReUsableInputOtp_input_div>span{
+    font-size: 11px;
+}
+/* --------ReUsableInputOtp_react_otp_input---------- */
+.ReUsableInputOtp_react_otp_input{
+    width: 33px !important;
+    min-height: 33px !important;
+    margin: 7px 8px;
+    /* box-shadow: 0px 0px px 2px rgb(0 0 0 / 60%); */
+    background-color: #fff;
+  }
+}
+@media screen and (max-width:600px) {
+    .ReUsableInput_changeEmail{
+      width: 100%;
+        min-height: 30px !important ;
+        gap: 5px;
+        height: 35px;
+    }
+    .ReUsableInput_paragraph_div{
+        /* width: 26% !important; */
+    }
+    .EmailPassPhoneEdit_oldEmail_div>p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .ReUsableInput_paragraph_div>h6{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .ReUsableInputOtp_input_div>input {
+        width: 35px;
+        max-height: 20px !important;
+        font-size: 15px !important;
+    }
+    .ReUsableInput_oldEmail_div>input {
+        width: 91%;
+        min-height: 28px !important;
+        height: 28px !important;
+        font-size: 12px;
+    }
+    .ChangeEmail_container_div{
+        padding: 15px 5px;
+    }
+    .ReUsableInput_paragraph_div {
+        /* width: 22% !important; */
+    }
+    .ReUsableInput_ErrorUnVerifiedUser{
+        line-height: 7px;
+    }
+    /* --------ReUsableInputOtp_react_otp_input---------- */
+.ReUsableInputOtp_react_otp_input{
+    width: 25px !important;
+    min-height: 25px !important;
+    margin: 7px 3px ;
+    /* box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 60%); */
+    background-color: #fff;
+  }
+  .ReUsableInput_ErrorVerifiedUser{
+    font-size: 10px;
+}
+}

@@ -1,0 +1,390 @@
+.UserDetails_main_container_div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.UserDetails_MiddleLine{
+    width: 13px;
+    margin: 150px 0;
+}
+.UserDetails_TotalUser{
+width: 50%;
+}
+.UserDetails_TolalUserGraph{
+    width: 50%;
+}
+
+.TotleUser_main_container_div{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+
+}
+.TotleUser_container_div{
+    width: 80%;
+}
+.TotleUser_container_div>h6{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+    padding: 15px 0;
+}
+.TotleUser_userType{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.TotalUserbox_main_container_div{
+    width: 280px;
+    height: 180px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+   cursor: pointer;
+}
+.TotalUserbox_PersonalBusiness{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+.TotalUserbox_Tittle{
+    display: flex;
+    justify-content: space-between;
+}
+.TotalUserbox_Tittle>p{
+    padding: 10px;
+}
+.TotalUserbox_Personal,.TotalUserbox_Business{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.TotalUserbox_Business{
+    align-items: flex-end;
+}
+.TotalUserbox_Personal>h3,.TotalUserbox_Business>h3{
+    font-weight: 600;
+    font-size: 25px;
+}
+.TotalUserbox_Personal>div{
+    width: 50px;
+   height: 50px;
+}
+.TotalUserbox_Personal>img,.TotalUserbox_Business>img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.TotalUserbox_Personal>p,.TotalUserbox_Business>p{
+    font-size: 14px;
+ }
+
+
+
+/* -------------------TolalUserGraph------------------ */
+
+.TotalUserGraph_mainContainerDiv{
+    margin-top: 75px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.Charts_Hr{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 4px;
+}
+
+.Charts_ContainDiv{
+    background-color: #E7E7E7;
+    border: 1px solid rgba(10, 3, 3, 0.1);
+    border-radius: 6px;
+    width: 430px;
+}
+.Charts_HeadingCalender{
+    padding: 18px 30px;
+}
+.Charts_HeadingCalender>h6{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+.Charts_Heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Charts_Paragraph>h3{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.0375em;
+    color: #0B1354;
+    padding-top:10px;
+}
+.Charts_Paragraph>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
+}
+.Charts_Calender{
+    background-image:url(./img9.svg) ;
+    width: 50px;height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-size: cover;
+    padding-top: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.Charts_Calender>p{
+    font-size: 17px;
+    line-height: 20px;
+}
+
+
+.Charts_CalenderAlldate{
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    z-index: 100;
+    display: none;
+}
+
+.Charts_Calenderdate{
+    background-color: #828282;
+    padding: 10px 20px;
+    margin: 2px 1px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.Charts_Calenderdate:hover{
+    opacity: 1;
+}
+
+.Charts_Calender:hover .Charts_CalenderAlldate{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(10, 3, 3, 0.1);
+    background-color: #E7E7E7;
+}
+
+
+.Charts_ExpendContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+}
+.Charts_ExpendContainer>img{
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+.Charts_ExpendContainer>p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #4F4F4F;
+}
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width:1520px) {
+    .UserDetails_main_container_div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .UserDetails_MiddleLine{
+        width: 9px;
+        margin: 100px 0;
+    }
+    
+    .UserDetails_TotalUser{
+    width: 50%;
+    }
+    .UserDetails_TolalUserGraph{
+        width: 50%;
+    }
+    
+    .TotleUser_main_container_div{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .TotleUser_container_div{
+        width: 80%;
+    }
+    .TotleUser_container_div>h6{
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 11px;
+        color: #828282;
+        padding: 10px 0;
+    }
+    .TotleUser_userType{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .TotalUserbox_main_container_div{
+        width: 180px;
+        height: 120px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+       
+    }
+    .TotalUserbox_PersonalBusiness{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        gap: 10px;
+        padding:0 10px;
+    }
+    .TotalUserbox_Tittle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .TotalUserbox_Tittle>p{
+        font-size: 11px;
+        padding: 10px;
+    }
+    .TotalUserbox_Personal,.TotalUserbox_Business{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    }
+    .TotalUserbox_Personal>h3,.TotalUserbox_Business>h3{
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .TotalUserbox_Personal>div{
+        width: 30px;
+       height: 30px;
+    }
+    .TotalUserbox_Personal>img,.TotalUserbox_Business>img{
+       width: 30px;
+       height: 30px;
+    }
+    .TotalUserbox_Personal>p,.TotalUserbox_Business>p{
+        font-size: 9px;
+     }
+
+
+/* -------------------TolalUserGraph------------------ */
+
+.TotalUserGraph_mainContainerDiv{
+    margin-top: 60px;
+    padding: 20px;
+    gap: 50px;
+}
+.Charts_Hr{
+    height: 2px;
+}
+
+.Charts_ContainDiv{
+    background-color: #E7E7E7;
+    border: 1px solid rgba(10, 3, 3, 0.1);
+    border-radius: 6px;
+    width: 300px;
+}
+.Charts_HeadingCalender{
+    padding: 10px 20px;
+}
+.Charts_HeadingCalender>h6{
+    font-size: 11px;
+    line-height: 12px;
+}
+.Charts_Paragraph>h3{
+    font-size: 23px;
+    line-height: 27px;
+    padding-top:5px;
+}
+.Charts_Paragraph>p{
+    font-size: 10px;
+    line-height: 10px;
+}
+.Charts_Calender{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+.Charts_Calender>p{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+.Charts_ExpendContainer{
+    padding: 10px 20px;
+}
+.Charts_ExpendContainer>img{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}
+
+.Charts_ExpendContainer>p{
+    font-size: 11px;
+    line-height: 10px;
+    color: #4F4F4F;
+}
+
+
+.Charts_CalenderAlldate{
+    position: absolute;
+    top: 0;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    z-index: 100;
+    display: none;
+}
+
+.Charts_Calenderdate{
+    padding: 5px 15px;
+    font-size: 13px;
+}
+
+
+
+ }

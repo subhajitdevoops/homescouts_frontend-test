@@ -1,0 +1,159 @@
+.span {
+  font-size: 14px;
+  color: #6c757d;
+}
+.container {
+  padding: 1% 3%;
+  width: 100%;
+}
+.dragContent {
+  border: 3px dashed #a3daff;
+  width: 80%;
+  height: 304px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f9ff;
+  color: rgb(99, 98, 98);
+  border-radius: 10px;
+}
+.dragIcon {
+  color: #035afb;
+}
+.dragText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dragContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 15px;
+}
+.imageWrapper {
+  width: 240px;
+  height: 140px;
+  position: relative;
+}
+.image {
+  width: 240px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0px 15px 0px 0px;
+}
+.minidragContent {
+  border: 3px dashed #a3daff;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f9ff;
+  color: rgb(99, 98, 98);
+  border-radius: 10px;
+}
+.deleteIcon {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(1, 12, 31, 0.78);
+  border-radius: 50%;
+  font-size: 18px;
+}
+.makeCoverImage {
+  cursor: pointer;
+  background-color: rgba(1, 12, 31, 0.78);
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  left: 12px;
+  bottom: 8px;
+  font-size: 16px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.makeCoverImage label {
+  font-size: 10px;
+  display: block;
+}
+.makeCoverImage input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.select {
+  /* -webkit-appearance: none; */
+  width: 100%;
+  height: 30px;
+  background-color: rgba(1, 12, 31, 0.78);
+  margin: 0px auto 4px;
+  padding: 4px 10% 4px 10%;
+  text-align: left;
+  display: block;
+  border: none !important;
+  border-radius: 0px 0px 0px 15px;
+  outline: none !important;
+  font-size: 14px;
+  color: white;
+}
+
+.select option {
+  background: white;
+  color: black;
+}
+/* ------------------------For responsiveness--------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .imageWrapper {
+    width: 100%;
+    height: fit-content;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .minidragContent {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .dragContent {
+    width: 100%;
+  }
+  .span {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

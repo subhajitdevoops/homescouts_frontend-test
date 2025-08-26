@@ -1,0 +1,222 @@
+.OverView_main_container_div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.OverView_property_image {
+    display: flex;
+
+}
+
+.OverView_property_image>img {
+    width: 440px;
+    height: 440px;
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.118) 22.9%), linear-gradient(270deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 15.96%, rgba(0, 0, 0, 0) 33.17%), linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 10.02%, rgba(0, 0, 0, 0) 25.18%);
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 22px;
+}
+
+.OverView_proertyAll_overView {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 20px;
+    height: 440px;
+    background: #FAFBFC;
+    box-shadow: 0px 3.6896px 9.83895px rgba(31, 92, 163, 0.05);
+    border-radius: 16px;
+}
+
+.OverView_property_smallimage {
+    height: 100%;
+    overflow: hidden;
+}
+
+.OverView_property_smallimage>div {
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+.OverView_property_smallimage>div>img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* ---------------OverViewAllDetails--------------- */
+.OverViewAllDetails_main_container_div {
+    width: 50%;
+}
+
+.OverViewAllDetails_iconName {
+    display: flex;
+    gap: 10px;
+}
+
+.OverViewAllDetails_iconName>p,
+.OverViewAllDetails_length>p {
+    font-size: 14px;
+    color: #999999;
+    line-height: 15px;
+}
+
+.OverViewAllDetails_feature>p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    white-space: initial;
+}
+
+@media screen and (max-width:1520px) {
+    .OverView_main_container_div {
+        gap: 10px;
+        margin: 30px 0;
+    }
+
+    .OverView_property_image>img {
+        width: 340px;
+        height: 340px;
+        border-radius: 15px;
+    }
+
+    .OverView_proertyAll_overView {
+        padding: 15px;
+        height: 340px;
+        border-radius: 10px;
+    }
+
+    .OverView_property_smallimage>div {
+        display: flex;
+        flex-direction: column;
+        height: 340px;
+        width: 100%;
+        overflow-y: scroll;
+        padding-right: 17px;
+        box-sizing: content-box;
+    }
+
+    .OverView_property_smallimage>div>img {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+
+    }
+
+    /* ---------------OverViewAllDetails--------------- */
+    .OverViewAllDetails_main_container_div {
+        width: 50%;
+    }
+
+    .OverViewAllDetails_iconName {
+        gap: 6px;
+    }
+
+    .OverViewAllDetails_iconName>p,
+    .OverViewAllDetails_length>p {
+        font-size: 11px;
+    }
+
+    .OverViewAllDetails_feature>p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .OverView_property_image>img {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+
+    .OverView_main_container_div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .OverView_proertyAll_overView {
+        width: 90%;
+    }
+
+    .OwnerDetails_contactUser_div {
+        flex-direction: column;
+    }
+
+    .OwnerDetails_ContactDetails_div {
+        width: 100% !important;
+    }
+
+    .OwnerDetails_nameEmailPhone_div {
+        width: 100% !important;
+    }
+
+    .OwnerDetails_phone_input {
+        width: 100% !important;
+    }
+
+    .OwnerDetails_ContactDetails_container_div {
+        gap: 10px;
+        width: 200px;
+    }
+
+    .OwnerDetails_contactUser_div {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .OverView_property_image>img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .OverView_main_container_div {
+        gap: 5px;
+        margin: 30px 0;
+        flex-direction: column;
+    }
+
+    .OverView_property_image {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .OverView_property_smallimage {
+        width: 100%;
+        height: 80px;
+    }
+
+    .OverView_property_smallimage>div {
+        flex-direction: row;
+    }
+
+    .OwnerDetails_main_container_div {
+        padding: 30px 0;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .OwnerDetails_main_container_div {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .OwnerDetails_OwnerDetails_container_div {
+        margin-bottom: 20px !important;
+    }
+
+}

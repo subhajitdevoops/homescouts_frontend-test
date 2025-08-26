@@ -1,0 +1,113 @@
+.AccountChange_Main_container_div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 70px;
+    width: 100%;
+}
+.AccountChange_heading>h6{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+.AccountChange_UserRegistered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 426px;
+    padding: 5px;
+    height: 108px;
+    background: #F5F9FF;
+    border: 1px solid #1565D8;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+.AccountChange_AccountIcon{
+    width: 20%;
+
+}
+.AccountChange_AccountIcon>img{
+    width: 52px;
+    height: 52px;
+}
+.AccountChange_AccountDesc{
+    width: 85%;
+}
+.AccountChange_AccountDesc>h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 7px;
+}
+.AccountChange_AccountDesc>p{
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #8692A6;
+}
+.AccountChange_pragraph>p{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    opacity: 0.7;
+    width: 100%;
+    padding: 25px;
+}
+@media screen and (max-width:1520px) {
+    .AccountChange_Main_container_div{
+        gap: 20px;
+        padding: 40px;
+        width: 100%;
+    }
+    .AccountChange_heading>h6{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .AccountChange_UserRegistered{
+        width: 300px;
+        padding: 5px;
+        height: 60px;
+        border-radius: 4px;
+    }
+    .AccountChange_AccountIcon{
+        width: 20%;
+    }
+    .AccountChange_AccountIcon>img{
+        width: 30px;
+        height: 30px;
+    }
+    .AccountChange_AccountDesc{
+        width: 85%;
+    }
+    .AccountChange_AccountDesc>h6{
+        font-size: 11px;
+        line-height: 11px;
+        margin-bottom: 3px;
+    }
+    .AccountChange_AccountDesc>p{
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .AccountChange_pragraph>p{
+        border-radius: 7px;
+        font-size: 15px;
+        line-height: 30px;
+        opacity: 0.7;
+        width: 100%;
+        padding: 15px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .AccountChange_heading>h6{
+        font-size: 18px;
+    }
+    .AccountChange_pragraph>p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+}

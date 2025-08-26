@@ -1,0 +1,149 @@
+.DiscartMainContainerDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.478);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DiscartMainContainer{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-top: -120px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+.Discart_Tittle>img{
+    position: absolute;
+    top: -33px;
+    right: -21px;
+    width: 37%;
+}
+.Discart_Tittle{
+    flex: 1;
+    background-color: #EAEAEA;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+.Discart_Tittle>p{
+    font-size: 20px;
+    color: #3C4B69;
+}
+.Discart_Message{
+    flex: 3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+}
+.Discart_Message>p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+}
+.Discart_button{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    background-color: #3C4B69;
+    border-radius:0 0 25px 25px ;
+    cursor: pointer;
+}
+
+.Discart_button>div{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+    font-size: 20px;
+    color: #D9D9D9;
+}
+
+.Discart_discart{
+    background-color: #BA0404;
+    border-radius:0 0 0 25px ;
+}
+.Discart_discart:hover{
+    background-color: #a00303;
+
+}
+.Discart_discart>div,.FaLongArrowAltRights{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.Discart_continue{
+    background-color: #0078DB;
+    border-radius:0 0 25px 0 ;
+}
+.Discart_continue:hover{
+    background-color: #0068bd;
+}
+.FaLongArrowAltRights{
+    color: #0078DB;
+}
+@media screen and (max-width:600px) {
+    .DiscartMainContainer{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        margin-top: -90px;
+    }
+    .Discart_Tittle>img{
+        top: -22px;
+        right: -16px;
+        width: 36%;
+    }
+    .Discart_Tittle{
+        border-radius: 20px 20px 0 0;
+        padding-left: 30px;
+    }
+    .Discart_Tittle>p{
+        font-size: 15px;
+    }
+    .Discart_Message{
+        padding: 20px;
+    }
+    .Discart_Message>p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .Discart_button{
+        border-radius:0 0 20px 20px ;
+    }
+    .Discart_button>div{
+        gap: 6px;
+        font-size: 16px;
+    }
+    .Discart_discart{
+        border-radius:0 0 0 20px ;
+    }
+    .Discart_discart>div,.FaLongArrowAltRights{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+    .Discart_continue{
+        border-radius:0 0 20px 0 ;
+    }
+}

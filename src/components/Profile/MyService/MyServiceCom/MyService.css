@@ -1,0 +1,129 @@
+.MyService_main_container_div{
+    margin: 15px 0px;
+}
+.MyService_detailstype_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.MyService_image_container{
+padding: 10px;
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.MyService_image_container>img{
+    width: 90%;
+    height: 175px;
+    /* background: url(image.png); */
+    border: 2px dashed #006AC2;
+    border-radius: 10px;
+}
+.MyService_ServiceLocation{
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.MyService_ServiceLocationDiv{
+    width: 100%;
+    height: 35%;
+    padding: 10px 0;
+}
+.MyService_detailsandimages_div{
+    height: 100%;
+    gap: 5px;
+}
+.MyServiceTitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+.MyServer_container_div{
+    margin-top: 5px;
+}
+.MyService_contactowner_div>button{
+    margin-top: 10px;
+
+}
+.MyService_details_container_div{
+    width: 75%;
+}
+.MyserviceToggleButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.MyService_EditAas>button{
+    border-radius: 50px;
+    padding: 2px;
+}
+.MyServiceToggleButtons{
+    padding: 0px !important;
+}
+@media screen and (max-width:600px) {
+    .MyService_main_container_div{
+        margin: 15px 5px;
+    }
+    .MyService_detailstype_div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .MyService_image_container{
+    padding: 0px;
+    width: 40%;
+    }
+    .MyService_image_container>img{
+        width: 95%;
+        height: 80%;
+        /* background: url(image.png); */
+        border: 2px dashed #006AC2;
+        border-radius: 10px;
+    }
+    .MyService_ServiceLocation{
+        gap: 5px;
+    }
+    .MyService_ServiceLocationDiv{
+        width: 100%;
+        height: 40%;
+        padding: 10px 0;
+    }
+    .MyService_detailsandimages_div{
+        height: 150px;
+        margin: 10px;
+    }
+    .MyServiceTitle{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .MyServer_container_div{
+        margin-top: 5px;
+    }
+
+    .MyService_details_container_div{
+        width: 75%;
+    }
+    .MyserviceToggleButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .MyService_EditAas>button{
+        border-radius: 50px;
+        padding: 2px;
+        margin: 2px;
+    }
+    .MyServiceToggleButtons{
+        padding: 0px !important;
+    }
+    .MyService_contactowner_div>button{
+        margin-top: 0px;
+    
+    }
+}

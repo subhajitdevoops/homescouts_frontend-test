@@ -1,0 +1,26 @@
+.PostPropertyButton_btn{
+    width: 150px;
+    color: white;
+    border: 1px solid #ED6823;
+    background-color: #ED6823;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-Radius: 1.5rem;;
+}
+.PostPropertyButton_btn:hover{
+    box-shadow: 0px 2px 13px rgba(5, 0, 255, 0.16);
+    color: #fff;
+    background-color: rgba(237, 104, 35,0.8);
+
+}
+@media screen and (max-width:1366px) {
+    .PostPropertyButton_btn{
+        width: 100px;
+        color: white;
+        border: 1px solid #ED6823;
+        background-color: #ED6823;
+        padding: 0.375rem ;
+        font-size: 0.7rem;
+        border-Radius: 1.5rem;
+    }
+}

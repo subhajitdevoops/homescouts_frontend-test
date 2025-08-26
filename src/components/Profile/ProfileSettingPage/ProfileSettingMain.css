@@ -1,0 +1,7 @@
+.ProfileMain_profile_container_div{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+    gap: 30px;
+    margin-right: 4rem;
+}

@@ -1,0 +1,177 @@
+.Notifications_main_container_div{
+    width: 100%;
+    padding: 70px;
+}
+.Notifications_main_container_div>h6{
+    font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+}
+.Notifications_AllList{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Notifications_List_mainContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px;
+position: relative;
+}
+.Notifications_List{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: start;
+    gap: 20px;
+    padding: 30px 0;
+
+}
+.Notifications_message{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #000000;
+    opacity: 0.7;
+    padding: 5px 0;
+}
+.Notifications_msg{
+
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+opacity: 0.7;
+
+}
+.Notifications_time{
+    /* padding: 30px; */
+    /* width: 15%; */
+    font-size: 21px;
+line-height: 25px;
+color: #000000;
+text-align: end;
+opacity: 0.4;
+}
+.Notifications_List_main,.Notifications_List_time{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Notifications_Listsicon{
+    color: #1876F2;
+    font-size: 60px;
+transform: rotate(-15deg);
+}
+.Notifications_List_Image{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.Notifications_BiMessageDetail{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    top:65%;
+    right:5%;
+    cursor: pointer;
+}
+.notification_viewButtonDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #509ce84f;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.notification_viewButton{
+    background-color: #1876F2;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px;
+    margin: 5px;
+}
+@media screen and (max-width:1520px) {
+    .Notifications_main_container_div{
+        width: 100%;
+        padding: 30px;
+    }
+    .Notifications_main_container_div>h6{
+        font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    }
+    .Notifications_AllList{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Notifications_List{
+        gap: 10px;
+        padding: 15px 0;
+    }
+    .Notifications_message{
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.7;
+    }
+    .Notifications_time{
+        font-size: 13px;
+        text-align: end;
+    line-height: 25px;
+
+    }
+    .Notifications_List_mainContainer {
+        gap: 5px;
+        border-radius: 10px;
+        padding: 0px;
+    }
+    .Notifications_msg {
+        font-size: 10px;
+        line-height: 12px;
+        color: #000000;
+        opacity: 0.7;
+    }
+    .Notifications_Listsicon {
+        font-size: 40px;
+    }
+    .Notifications_List_Image {
+        width: 50px;
+        height: 50px;
+    }
+    .Notifications_BiMessageDetail {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+    .Notifications_List_main, .Notifications_List_time {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .Notifications_AllList{
+        padding: 0 !important;
+    }
+    .Notifications_main_container_div{
+        width: 100%;
+        padding: 10px;
+    }
+}

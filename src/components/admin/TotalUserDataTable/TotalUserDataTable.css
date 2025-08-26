@@ -1,0 +1,462 @@
+.DataTable_mainContainerDiv{
+    width: 100%;
+    /* padding: 30px; */
+    position: relative;
+    height: 85vh;
+}
+.kDEcCH{
+    background-color: #ffffff00!important;
+
+}
+.UserTable_maincontainerDiv{
+    display: flex;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 6px;
+    padding: 20px 5px;
+    margin: 15px 0;
+    height: 102px;
+}
+.DataTable_ContainerDiv{
+padding-right: 50px;
+}
+.DataTable_headingDiv{
+    padding:0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DataTable_headingDiv>div{
+    width: 14.2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #262B35;
+}
+.UserTable_trow{
+    flex: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.UserTable_maintooglediv{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.UserTable_trow>div{
+    width: 14.2%;
+    padding: 0px 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #142134;
+}
+
+.UserTable_UserNameDiv{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.UserTable_UserNameDiv>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+
+.UserTable_toggleSwitch{
+    width: 0;
+    background-color: #fff;
+}
+
+
+.UserTable_imageLi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background-color: #2c303a;
+    border: 4px solid #FFF;
+  }
+  .avatar>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .avatar-group {
+    display: flex;
+    /* &.rtl {
+      direction: rtl;
+      
+      .avatar:hover:not(:last-of-type) {
+        transform: translate(10px);
+      } */
+    }
+    
+    .avatar {
+      margin-left: -20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      
+      /* &:hover:not(:last-of-type) {
+         transform: translate(-10px);
+      } */
+    }
+    
+    .hidden-avatars {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -20px;
+      z-index: 2;
+      background-color: #2682D6;
+      border: 4px solid #FFFFFF;
+      color: #fff;
+      cursor: pointer;
+    }
+
+
+
+    .UserTable_AccountType{
+        width: 70px;
+        height: 27px;
+        left: 1439px;
+        top: 164px;
+        background-color: #EFF1F6;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .buss{
+        background-color: #FC8019;
+        color: #fff !important;
+    }
+
+
+    .DataTable_SearchDiv{
+        width: 100%;
+      
+    }
+    .DataTable_Search{
+        width: 490px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.16);
+        border-radius: 86px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .DataTable_Search>input{
+        background-color: #fff;
+        min-height: 38px;
+        border-radius: 86px;
+        width: 100%;
+        padding: 0 30px;
+        font-size: 16px;
+
+    }
+    .DataTable_Search>input::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #262B35;
+        opacity: 0.5;
+    }
+
+    .DataTable_FcSearch{
+        margin:0 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+.ShowService_mainContainerDiv{
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 435px;
+    max-height: 83px;
+    left: 50%;
+    bottom: 86%;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.04);
+    border-radius: 17px;
+    overflow: hidden;
+    display: flex;
+    padding: 20px;
+    z-index: 10000 !important;
+}
+.ShowService_containerDiv{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    isolation: isolate;
+    padding-right: 20px;
+    height: 44px;
+    border: 2px solid #EFF0F6;
+    border-radius: 230px;
+    cursor: pointer;
+}
+.ShowService_Select{
+    font-weight: 600 !important;
+    background-color: #EFF0F6 !important;
+    color: #F7892C !important;
+}
+.ShowService_SelectActive{
+    border: 2px solid #2682D6;
+}
+.ShowService_containerDiv>img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+
+}
+.ShowService_containerDiv>img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+
+.ShowService_containerDiv>a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.AccountTypeFilter_mainContainerDiv{
+    position: absolute;
+    left: -50%;
+    bottom: 100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.shift{
+    right:9% !important;
+}
+.ActiveFilter{
+    background-color: #1D8E01;
+    color: #fff;
+}
+.DeActiveFilter{
+    background-color: #FC1919;
+    color: #fff;
+}
+
+.DataTable_serviceOpt,.DataTable_AccountOpt ,.DataTable_ActiveOpt{
+    cursor: pointer;
+    position: relative;
+}
+.ShowService_mainContainerDiv,.AccountTypeFilter_mainContainerDiv{
+    /* display: none; */
+}
+.DataTable_serviceOpt:hover .ShowService_mainContainerDiv{
+    display: grid;
+}
+.DataTable_AccountOpt:hover  .AccountTypeFilter_mainContainerDiv{
+    display: flex;
+}
+.DataTable_ActiveOpt:hover  .AccountTypeFilter_mainContainerDiv{
+    display: flex;
+}
+
+.navlinks{
+    width: 100%;
+    /* height: 100%; */
+  
+}
+
+@media screen and (max-width:1520px) {
+    .DataTable_mainContainerDiv{
+        width: 100%;
+        /* padding: 30px; */
+    }
+    
+    .DataTable_ContainerDiv{
+    padding-right: 0px;
+    }
+    .DataTable_headingDiv{
+        padding:0 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .DataTable_headingDiv>div{
+        width: 14.2%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 5px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #262B35;
+    }
+    .UserTable_maincontainerDiv{
+        border-radius: 6px;
+        padding: 20px 5px;
+        margin: 15px 0;
+        height: 70px;
+        gap: 10px;
+    }
+    .UserTable_trow>div{
+        width: 14.2%;
+        padding: 0px 5px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #142134;
+    }
+    
+ 
+    .UserTable_UserNameDiv>img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .DataTable_Search{
+        width: 390px;
+        height: 30px;
+        margin: 10px 0;
+    }
+    .DataTable_Search>input{
+        min-height: 28px;
+        border-radius: 86px;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 13px;
+
+    }
+    .DataTable_Search>input::placeholder{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        opacity: 0.5;
+    }
+
+    .DataTable_FcSearch{
+        margin:0 20px;
+        font-size: 20px;
+    }
+
+    .avatar {
+        width: 35px;
+        height: 35px;
+        border: 2px solid #FFF;
+      }
+      .avatar>img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+         
+    .avatar {
+        margin-left: -20px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+          
+          /* &:hover:not(:last-of-type) {
+             transform: translate(-10px);
+          } */
+    }
+        
+    .hidden-avatars {
+        width: 35px;
+        height: 35px;
+        border: 2px solid #FFFFFF;
+    }
+    
+
+    .UserTable_AccountType{
+        width: 60px;
+        height: 25px;
+        font-size: 9px;
+    }
+.ShowService_mainContainerDiv{
+      width: 230px;
+      background: #FFFFFF;
+      border: 2px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 4px 7px rgb(0 0 0 / 4%);
+      border-radius: 10px;
+      gap: 5px;
+      bottom: 83%;
+      padding: 3px;
+  
+}
+.ShowService_containerDiv{
+    gap: 5px;
+    padding-right: 10px;
+    height: 34px;
+}
+.ShowService_containerDiv>img{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.ShowService_containerDiv>a{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.AccountTypeFilter_mainContainerDiv{
+    padding: 10px;
+    gap: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+
+}

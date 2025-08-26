@@ -1,0 +1,198 @@
+:root {
+  --bg-color: white;
+  --bdr-color: #0061f7;
+  --bdr-radius: 0.5rem;
+}
+.ldContainer {
+  padding: 1% 3%;
+}
+
+.inputContainer {
+  border: 1px solid #0061f7;
+  border-radius: var(--bdr-radius);
+  width: 65%;
+  height: 3rem;
+  margin: 16px 0;
+}
+.locationBtn {
+  border: none !important;
+  border-radius: none !important;
+  font-size: 24px;
+  display: flex;
+  width: inherit;
+  align-items: center;
+  justify-content: center;
+  color: #0061f7;
+  transition: none !important;
+}
+.locationBtn:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.locationBtn:hover {
+  color: white;
+}
+.inputContainer:hover {
+  background-color: #0061f7;
+  color: white;
+}
+.inputAddressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 16px;
+}
+.inputAddress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid rgb(208, 208, 208);
+  width: 80%;
+  height: 60px;
+  margin: 8px 0;
+  padding: 2px;
+}
+/* ------------------------------Style of All input Field of address is below------------------------------- */
+.inpContainer {
+  position: relative;
+  width: 65%;
+  height: 3rem;
+}
+.inputAdd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.585) !important;
+  border-radius: var(--bdr-radius);
+  font-family: inherit;
+  font-size: 15px;
+  color: black;
+  outline: none;
+  padding: 1.25rem;
+  background: var(--bg-color);
+}
+.inputAdd:hover {
+  border-color: var(--bdr-color) !important;
+}
+.inputAdd:focus {
+  border: 1px solid var(--bdr-color) !important ;
+  box-shadow: 0 0 0 2px #0063f734 !important;
+}
+.label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: grey;
+  cursor: text;
+  font-weight: 400;
+  font-size: 14px;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in !important;
+  background-color: var(--bg-color);
+}
+.inputAdd:focus ~ .label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  color: var(--bdr-color);
+}
+.inputAdd:not(:placeholder-shown).inputAdd:not(:focus) ~ .label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+  color: var(--bdr-color);
+}
+.inputAdd:not(:placeholder-shown) {
+  border: 1px solid grey !important ;
+  box-shadow: none !important;
+  background-color: rgba(240, 248, 255, 0.564);
+}
+/* --------------- tooltip --------------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 67%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltiptext {
+  width: 35%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltiptext.error {
+  color: red;
+  visibility: visible;
+}
+.inlineError {
+  margin: -15px 0 -10px;
+  color: red;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: block;
+  padding: 2px;
+}
+.firesales{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #eff0f6;
+  border-radius: 50px;
+  padding: 1px;
+}
+.sele{
+  background-color: #0061f7;
+}
+/* ------------------------For responsiveness--------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .inpContainer {
+    width: 100%;
+  }
+  .inputContainer {
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

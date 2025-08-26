@@ -1,0 +1,89 @@
+:root {
+  --selected-bg-color: #b2cdf540;
+  --selected-bdr-color: #70a4f3;
+}
+.input {
+  min-height: fit-content;
+  margin: 4px 4px;
+  background-color: white;
+  color: gray;
+  border: 1.2px solid gray !important;
+  border-radius: 50px;
+  padding: 6px 10px;
+}
+
+.input:hover {
+  background-color: lightgray;
+  color: black;
+}
+.Sell:hover,
+.Rent:hover,
+.PG:hover,
+.selected:hover {
+  background-color: var(--selected-bg-color);
+  color: black;
+  border: 1.2px solid var(--selected-bdr-color) !important;
+}
+.input:focus,
+.Sell:focus,
+.Rent:focus,
+.PG:focus,
+.selected:focus {
+  border: 1.2px solid var(--selected-bdr-color) !important;
+  box-shadow: none !important;
+}
+.Sell,
+.PG,
+.Rent {
+  background-color: var(--selected-bg-color);
+  color: black;
+  border: 1.2px solid var(--selected-bdr-color) !important;
+  min-height: fit-content;
+  margin: 4px 4px;
+  border-radius: 50px;
+  padding: 6px 10px;
+}
+
+.bdContainer {
+  padding: 1% 3%;
+}
+.sell {
+  margin-left: 0px !important;
+}
+
+.selected {
+  background-color: var(--selected-bg-color);
+  color: black;
+  border: 1.2px solid var(--selected-bdr-color) !important;
+  min-height: fit-content;
+  margin: 4px 4px;
+  border-radius: 50px;
+  padding: 6px 10px;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: block;
+  padding: 2px;
+}
+/* ------------------------For responsiveness--------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

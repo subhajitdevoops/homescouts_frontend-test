@@ -1,0 +1,406 @@
+.ProfileSetting_main_container_div {
+    width: 100%;
+}
+
+.ProfileSetting_changeProfileImage {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.ProfileSetting_ProfileImage {
+    position: relative;
+    padding-left: 30px;
+}
+
+.ProfileSetting_ProfileImage>img {
+    width: 163px;
+    height: 163px;
+    border: 10px solid #fff;
+    border-radius: 100px;
+
+}
+
+.LoadersDiv {
+    position: absolute;
+    background-color: #8b8b8b7d;
+    width: 163px;
+    height: 163px;
+    border: 10px solid #fff;
+    border-radius: 100px;
+}
+
+.ProfileSetting_ProfileUserName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ProfileSetting_ProfileUserName>h6 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.ProfileSetting_BsCameraFill {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 10%;
+    left: 47%;
+    border-radius: 50px;
+    padding: 5px;
+    background: #D9D9D9;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+}
+
+.ProfileSetting_changeEmailPassword {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 80px 100px;
+}
+
+.ProfileSettingt_EditUserName_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ProfileSettingt_EditUserName_div>input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #006AC2;
+    background-color: #f0f2fa;
+    border-radius: 9px;
+    width: 80%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.ProfileSettingt_EditUserName_div>input::placeholder {
+    font-size: 25px;
+}
+
+.ProfileSetting_RiPencilFillicon {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    color: #C7872E;
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.EmailPassPhoneEdit_oldEmail_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 57px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #8B8B8B;
+    border-radius: 9px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.EmailPassPhoneEdit_oldEmail_div:hover {
+    border: 0.5px solid #006AC2;
+}
+
+.EmailPassPhoneEdit_oldEmail_div>p {
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.EmailPassPhoneEdit_error_div {
+    width: 40%;
+}
+
+.EmailPassPhoneEdit_error_div>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.EditRERA {
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    min-height: 35px !important;
+    background-color: "#fff" !important;
+}
+
+/* rera */
+.AttachDoc_mainContainer_div {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ServicePiEyeDuotoneA {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.AttachDoc_name {
+    width: 30%;
+}
+
+.AttachDoc_DocPdf {
+    width: 70%;
+    background-color: #ffffff;
+    border: 2px dashed #ed6823;
+    border-radius: 10px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+    cursor: pointer;
+}
+
+.AttachDoc_DocPdf>p {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.AttachDoc_PDFIcon {
+    width: 57px;
+    height: 60px;
+    background-color: #ed6823;
+    opacity: 0.7;
+    border: 2px dashed #ed6823;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+.ServiceProvider_AttachDoc_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    /* align-items: center; */
+    position: relative;
+}
+
+.ServiceProvider_AttachDoc_div>h3 {
+    width: 30%;
+    font-weight: 500;
+    font-size: 25px;
+    color: #ed6823;
+}
+
+.DLoader {
+    width: 25px;
+    height: 25px;
+    border: 5px solid #c5c7ca;
+    border-bottom-color: #ed6823;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 40px;
+    /* Space between the two inputs */
+}
+
+.file-input-wrapper {
+    position: relative;
+    width: 50%;
+}
+
+.input-label {
+    margin-bottom: 8px;
+}
+
+.file-input-box {
+    position: relative;
+}
+
+.file-input {
+    width: 100%;
+    padding: 8px 40px 8px 8px;
+    /* Adding padding to right for space */
+    background-color: #f0f2fa;
+    border-radius: 8px;
+}
+
+.remove-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    /* Custom red color */
+}
+
+.vertical-line {
+    height: 150px;
+    border-left: 2px solid #ccc;
+    /* Custom color for the line */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width:1520px) {
+
+    .ProfileSetting_changeProfileImage {
+        margin-top: -50px;
+        margin-left: 40px;
+        gap: 10px;
+        width: 200px;
+    }
+
+    .ProfileSetting_ProfileImage>img {
+        width: 90px;
+        height: 90px;
+        border: 5px solid #fff;
+    }
+
+    .LoadersDiv {
+        width: 90px;
+        height: 90px;
+        border: 5px solid #fff;
+    }
+
+    .ProfileSetting_ProfileUserName {
+        gap: 10px;
+    }
+
+    .ProfileSetting_ProfileUserName>h6 {
+        font-size: 15px;
+    }
+
+    .ProfileSetting_BsCameraFill {
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    .ProfileSetting_changeEmailPassword {
+        gap: 0px;
+        width: 80%;
+        margin: 20px 100px;
+    }
+
+    .ProfileSettingt_EditUserName_div {
+        border-radius: 6px;
+    }
+
+    .ProfileSettingt_EditUserName_div>input {
+        width: 140px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .ProfileSettingt_EditUserName_div>input::placeholder {
+        font-size: 15px;
+    }
+
+    .ProfileSetting_RiPencilFillicon {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .EmailPassPhoneEdit_oldEmail_div {
+        width: 100%;
+        margin-left: 70px;
+        height: 32px;
+        background-color: #FFFFFF;
+        border: 0.5px solid #8B8B8B;
+        border-radius: 5px;
+    }
+
+    .EmailPassPhoneEdit_oldEmail_div>p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .EmailPassPhoneEdit_error_div {
+        width: 40%;
+    }
+
+    .EmailPassPhoneEdit_error_div>div {
+        gap: 5px;
+    }
+
+    .EditRERA {
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        min-height: 25px !important
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ProfileSetting_changeProfileImage {
+        margin-top: -50px;
+        margin-left: 0px;
+        gap: 0px;
+    }
+
+    .ProfileSetting_BsCameraFill {}
+
+    .ProfileSetting_ProfileUserName {
+        padding-left: 30px;
+    }
+
+    .ProfileSetting_changeEmailPassword {
+        margin: 5px;
+        width: 100%;
+    }
+
+    .ReUsableInput_paragraph_div {
+        width: 100%;
+        justify-content: center;
+        padding-left: 200px;
+    }
+
+    .EmailPassPhoneEdit_oldEmail_div>p {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .ReUsableInput_paragraph_div>h6 {
+        font-size: 14px;
+    }
+}

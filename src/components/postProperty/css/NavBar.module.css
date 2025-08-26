@@ -1,0 +1,58 @@
+.navbarContainer {
+  background-color: #0061f7;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+}
+.flex_c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg_blue {
+  background-color: #0061f7;
+}
+.c_w {
+  color: white;
+}
+.Navbar_message_container_div {
+  margin: auto;
+  cursor: pointer;
+}
+.Navbar_arrow_container_div {
+  transform: rotate(180deg);
+}
+.userIcon {
+  width: 50%;
+}
+.ArrowIcon {
+  font-size: 1.75rem;
+  margin: auto;
+}
+/* ------------------------For responsiveness--------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .userIcon {
+    width: 10%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

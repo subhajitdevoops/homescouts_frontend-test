@@ -1,0 +1,231 @@
+/* -------------AboutPropety-------------- */
+
+.AboutPropety_main_container>h6 {
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 22px;
+    color: #666666;
+    padding: 10px 0px;
+}
+.AboutPropety_main_container{
+    overflow: hidden;
+}
+.AboutPropety_main_container>p {
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 10px;
+    color: #666666;
+}
+
+.AboutPropety_moreLess_button {
+    font-size: 14px;
+    line-height: 19px;
+    color: #3498DB !important;
+    cursor: pointer;
+}
+
+/* --------------Semifurnished--------------------- */
+.OwnerFurnished_main_Container_div>h6 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+    padding: 10px 0px;
+}
+
+.OwnerFurnished_main_Container_div>p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+    padding: 10px 0px;
+}
+
+.OwnerFurnished_Container_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.OwnerFurnished_furnirshed {
+    display: flex;
+    min-width: 15%;
+    padding: 10px 0px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+    gap: 10px;
+}
+
+.OwnerFurnished_furnirshed_icons {
+    font-size: 20px;
+}
+
+/* ---------------Amenities_shareReport------------------ */
+
+.Amenities_shareReport_container,
+.Amenities_report_container,
+.Amenities_share_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Amenities_shareReport_container {
+    margin-bottom: 100px
+}
+
+.Amenities_share_container>p,
+.Amenities_report_container>p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.Amenities_report_container>button {
+    background: #666E79;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+/* ----------RERA ------------- */
+.AboutPropety_mainRERA{
+    width: 100%;
+    height: auto ;
+    padding: 10px;
+
+}
+.AboutPropety_mainRERADetails{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.AboutPropety_mainRERADetails>h4{
+font-size: 16px;
+color: rgb(30, 29, 29);
+padding: 5px 0;
+}
+.AboutPropety_AgaintDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+.AboutPropety_AgaintRERA{
+    flex: 1;
+}
+.AboutPropety_AgaintRERA>h5{
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    padding: 5px 0;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.257);
+    /* margin-right: 30px; */
+    border-radius: 3px;
+    max-width: 50%;
+    margin-bottom: 2px;
+}
+.AboutPropety_AgaintRERA>p{
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #3498DB;
+    /* margin-right: 30px; */
+    border-radius: 3px;
+    max-width: 50%
+}
+
+@media screen and (max-width:1520px) {
+
+    /* -------------AboutPropety-------------- */
+    .AboutPropety_main_container>h6 {
+        font-size: 13px;
+        padding: 5px 0px;
+    }
+
+    .AboutPropety_main_container>p {
+        font-size: 11px;
+        padding-top: 5px;
+    }
+
+    .AboutPropety_moreLess_button {
+        font-size: 11px;
+    }
+
+    /* --------------Semifurnished--------------------- */
+    .OwnerFurnished_main_Container_div>h6 {
+        font-size: 12px;
+    }
+
+    .OwnerFurnished_main_Container_div>p {
+        font-size: 11px;
+        line-height: 19px;
+        color: #666666;
+        padding: 10px 0px;
+    }
+
+    .OwnerFurnished_Container_div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .OwnerFurnished_furnirshed {
+
+        font-size: 11px;
+    }
+
+    .OwnerFurnished_furnirshed_icons {
+        font-size: 15px;
+    }
+
+    /* ---------------Amenities_shareReport------------------ */
+
+    .Amenities_shareReport_container,
+    .Amenities_report_container,
+    .Amenities_share_container {
+        gap: 10px;
+    }
+
+    .Amenities_shareReport_container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .Amenities_share_container>p,
+    .Amenities_report_container>p {
+        font-size: 11px;
+        line-height: 19px;
+        color: #666666;
+    }
+
+    .Amenities_report_container>button {
+        background: #666E79;
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+@media screen and (max-width:820px) {
+    .AboutPropety_AgaintRERA>h5{
+        max-width: 80%;
+
+    }
+    .AboutPropety_AgaintRERA>p{
+        max-width: 80%
+    }
+}
+@media screen and (max-width:500px) {
+    .AboutPropety_AgaintRERA>h5{
+        max-width: 95%;
+
+    }
+    .AboutPropety_AgaintRERA>p{
+        max-width: 95%
+    }
+}

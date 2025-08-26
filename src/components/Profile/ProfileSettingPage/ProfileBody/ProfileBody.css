@@ -1,0 +1,53 @@
+.ProfileBody_main_container_div{
+    height: 100vh;
+    padding: 120px 0 0 0 ;
+    overflow: hidden;
+}
+.ProfileBody_container_div{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    padding-top: 17px;
+    box-sizing: content-box; 
+}
+.ProfileBody_contactAdmin_div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 2px solid #F3EDE7;
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+.ProfileBody_contactAdmin_div>p{
+    font-size: 22px;
+    line-height: 27px;
+    color: #65676B;
+}
+.ProfileBody_contactAdmin_div>a{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #1876F2;
+}
+@media screen and (max-width:1520px) {
+    .ProfileBody_contactAdmin_div{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+        border: 2px solid #F3EDE7;
+        border-radius: 6px;
+        padding: 20px 10px;
+
+    }
+    .ProfileBody_contactAdmin_div>p{
+        font-size: 14px;
+    }
+    .ProfileBody_contactAdmin_div>a{
+        font-size: 14px;
+    }
+}

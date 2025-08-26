@@ -1,0 +1,1001 @@
+.c_br {
+  color: #696f79;
+}
+
+.h3p {
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+
+.labelpadd {
+  padding: 10px 0;
+  letter-spacing: 0px;
+  font-size: 13px;
+  color: #696f79;
+  width: 100%;
+}
+/* .labelpadds {
+  width: auto !important;
+
+} */
+
+.redbd {
+  border-color: red !important;
+}
+
+.grnbd {
+  border:1px solid #13cf13 !important;
+}
+
+#bg_blue {
+  background-color: #1565d8;
+  color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* / Firefox / */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* ----------------------Signup------------------------- */
+#image_corner_elips {
+  position: absolute;
+  width: 15%;
+}
+
+.signup_main_container_div {
+  height: 100vh;
+}
+
+.signup_container_div {
+  width: 900px;
+  height: 540px;
+  background: #ffffff;
+  box-shadow: 0px 4px 28px 9px rgba(0, 0, 0, 0.21);
+  border-radius: 35px;
+  display: flex;
+}
+
+.signup_container1_div {
+  flex: 1;
+  background: linear-gradient(0deg,
+      rgba(237, 104, 35, 0.8),
+      rgba(237, 104, 35, 0.8)),
+    url("./imghouse1.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.signup_container2_div {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+.signup_Already_account_div {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.signup_Already_account {
+  float: right;
+}
+
+.signup_backbutton_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -41px 76px -2px -130px;
+  background-color: #ed6823;
+}
+
+#img {
+  width: 50px;
+}
+
+.signup_Already_account {
+  font-size: 13px;
+  line-height: 28px;
+  color: #8692a6;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.signup_Already_account>span {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup_join_us_div {
+  width: 320px;
+  flex-direction: column;
+}
+
+.signup_joinus_div>h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+ 
+}
+
+.signup_joinus_div>p {
+  font-size: 13px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #8692a6;
+}
+
+.signup_Prosonal_account_div {
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.signup_Prosonal_account_div:hover,
+.signup_prop_account_div:hover {
+  background: #f5f9ff;
+  border: 1px solid #1565d8;
+}
+
+.signup_Prosonal_account_div>div>h5,
+.signup_prop_account_div>div>h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.signup_Prosonal_account_div>div>p,
+.signup_prop_account_div>div>p {
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #8692a6;
+  padding: 5px 0px;
+}
+
+.signup_prop_account_div {
+  background: #ffffff;
+  box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  margin: 20px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.signup_prop_account_div>img,
+.signup_Prosonal_account_div>img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.signup_AiOutlineArrowRight {
+  margin: 10px;
+}
+
+.signup_elips_div {
+  margin-top: 40px;
+}
+
+.signup_elips_div>img {
+  float: right;
+  width: 130px;
+  margin: -50px;
+}
+
+.signup_container1_div {
+  border-radius: 35px 0px 0px 35px;
+}
+
+.signup_container23_div {
+  flex-direction: column;
+  display: flex;
+}
+
+#signup_image11 {
+  width: 100px;
+  align-self: flex-start;
+  margin: 70px 0 0 40px;
+}
+.homescoutLogo{
+  width: 100px;
+  align-self: flex-start;
+  /* margin: 70px 0 0 40px; */
+}
+
+#signup_image12 {
+  width: 350px;
+  align-self: center;
+}
+
+#signup_image13 {
+  width: 150px;
+  align-self: flex-end;
+  margin: 0px -78px -35px 0px;
+}
+
+.signup_container23_div>p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 15px;
+}
+
+#signup_image11_dots {
+  width: 60px;
+  align-self: flex-end;
+  margin: 0px 45px -32px 0px;
+}
+
+#signup_image12_dots {
+  width: 60px;
+  align-self: flex-start;
+  margin: -28px 0px -50px 16px;
+}
+
+/* ------------------ Register Individual Account!------------------- */
+.signupind_register_main_account_div {
+  margin-top: -20px;
+}
+
+.signupind_container1_div {
+  background: linear-gradient(0deg,
+      rgba(246, 198, 135, 0.6),
+      rgba(246, 198, 135, 0.6)),
+    url(./imghouse1.png);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.signupind_backbutton_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #f2a05f;
+  border: 6px solid white;
+  position: absolute;
+  margin: -16px 0px 0px -254px;
+}
+
+.signupind_Already_account {
+  transform: rotate(-90deg);
+  margin: 0px 0px 0px 150px;
+  position: absolute;
+  transform-origin: right;
+  font-size: 11px;
+}
+
+.signupind_Already_account_span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.signupind_joinus_div>h3 {
+  font-size: 22px;
+}
+
+.h3p {
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+
+.labelpadd {
+  padding: 10px 0;
+  letter-spacing: 0px;
+  font-size: 13px;
+  color: #696f79;
+}
+
+.signupind_Prosonal_account_div {
+  flex-direction: column;
+  width: 100%;
+}
+
+.signupind_Register_account_div>input,
+.signupind_email_address_account_div>input {
+  background-color: #ffffff;
+  border: 1px solid #1565d8 !important;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  /* font-size: 22px; */
+  width: 320px;
+  min-height: 35px;
+  font-size: 13px;
+}
+
+.signupind_Register_account_div>span {
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.signupind_Register_account_div>input::placeholder,
+.signupind_email_address_account_div>input::placeholder {
+  font-size: 13px;
+}
+
+.signupind_Register_account_div>input:focus,
+.signupind_email_address_account_div>input:focus {
+  border: 1px solid #1565d8 !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+.signupind_password_div {
+  width: 100%;
+}
+
+.signupind_enpassword_div,
+.signupind_repassword_div {
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 50%;
+  margin: 0;
+}
+
+.signupind_enpassword_div {
+  margin: 0 5px 0 0;
+}
+
+.signupind_repassword_div {
+  margin: 0 0 0 5px;
+}
+
+.signupind_enpassword_div>input,
+.signupind_repassword_div>input {
+  background-color: #ffffff;
+  border: 1px solid #1565d8 !important;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  min-height: 35px;
+  padding-right: 25px !important;
+}
+
+.signupind_enpassword_div>input::placeholder,
+.signupind_repassword_div>input::placeholder {
+  font-size: 11px;
+}
+
+.signupind_enpassword_div>input:focus,
+.signupind_repassword_div>input:focus {
+  border: 1px solid #1565d8 !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+.signupind_enpassword_div>span,
+.signupind_repassword_div>span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 5px;
+}
+
+.signupind_termcondition_div {
+  display: flex;
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+.signupind_termcondition_div>input {
+  margin-right: 30px;
+}
+
+.signupind_Register_button_div>button {
+  width: 320px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.signupind_google_button_div {
+  width: 320px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+  cursor: pointer;
+}
+
+.signupind_repassword_div>span,
+.signupind_enpassword_div>span {
+  cursor: pointer;
+}
+
+/* --------------------------Register for Business Account--------------------------------- */
+.signupbuss_container1_div {
+  background: linear-gradient(0deg,
+      rgba(254, 16, 16, 0.6),
+      rgba(254, 16, 16, 0.6)),
+    url(./imghouse1.png);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.signupbuss_backbutton_div {
+  background-color: #f83418;
+}
+
+/* -----------------------Login Account---------------------- */
+.login_backbutton_div {
+  border: none;
+  background-color: #926642;
+}
+
+.login_container1_div {
+  background: linear-gradient(0deg,
+      rgba(133, 102, 71, 0.87),
+      rgba(133, 102, 71, 0.87)),
+    url(./imghouse1.png);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.login_enpassword_div>input {
+  background: #ffffff;
+  border: 1px solid #1565d8 !important;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  width: 320px;
+  min-height: 35px;
+}
+
+.login_Prosonal_account_div {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.login_joinus_div>h3 {
+  font-size: 22px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.login_reset_password_div {
+  /* width: 100%; */
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.login_reset_password_div>div>input {
+  margin-right: 20px;
+}
+
+.login_resetpassword_div {
+  margin-left: 90px;
+  border-bottom: 2px solid #0061f7;
+}
+
+/* -----------------Reset password Account----------------- */
+.resetpassword_container1_div {
+  background: linear-gradient(0deg,
+      rgba(72, 215, 147, 0.9),
+      rgba(72, 215, 147, 0.9)),
+    url(./imghouse1.png);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.resetpassword_backbutton_div {
+  border: none;
+  background-color: #58cc88;
+}
+
+.resetpassword_enpassword_div>input {
+  position: relative !important;
+  background: #ffffff;
+  border: 1px solid #1565d8;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 320px;
+  min-height: 35px;
+  padding: 5px;
+}
+
+.reasetpassword_warning_div {
+  background: #ffcfcf;
+  /* opacity: 0.6; */
+  border-radius: 11px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.reasetpassword_warning_pred {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  color: #fe0000;
+  opacity: 0.6;
+}
+
+.reasetpassword_warning_signup {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  color: #1565d8;
+
+  opacity: 0.8;
+}
+
+.resetpassword_redcross {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+/* -------------------------otp--------------------- */
+.resetfillotp_main_container_div {
+  width: 320px;
+}
+
+.resetfillotp_container_div>input {
+  width: 40px;
+  margin: 10px 8px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  background-color: white;
+  text-align: center;
+}
+.resetfillotp_container_div>input:focus {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.6) !important;
+}
+.resetfillotp_container_div>input::content {
+  text-align: center;
+}
+
+.resetfillotp_container_buttontimer_div {
+  justify-content: space-between !important;
+}
+
+.resetfillotp_container_button {
+  padding: 10px;
+  background: rgba(225, 225, 225, 0.8);
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.resetfillotp_verify_button {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+/* --------------------newpassword-------------------------- */
+.signupind_password_account_div>label>span {
+  color: #fe0000;
+  font-size: 9px;
+}
+
+.signupind_password_account_div {
+  width: 320px;
+}
+
+.changedPassword_center {
+  text-align: center;
+}
+
+.changedPassword_center>img {
+  width: 100px;
+  margin: 20px;
+}
+
+.changedPassword_center>h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.signup_container2_mobile_div {
+  display: none;
+}
+
+.signup_container2_color_div {
+  display: none;
+}
+
+
+
+/* ----------------inputStyle_react_otp_input------------ */
+.inputStyle_react_otp_input{
+  width: 40px !important;
+  min-height: 40px;
+  margin: 7px 8px;
+  box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 60%);
+  background-color: #fff;
+}
+.inputStyle_react_otp_input:focus{
+  box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 60%) !important;
+}
+
+/* --------------responsive---------------------- */
+@media screen and (max-width: 991px) {
+  .signup_container2_div {
+  }
+
+  .signup_join_us_div {
+    width: 250px;
+  }
+
+  .signupind_joinus_div>h3 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .signupind_Register_account_div>input,
+  .signupind_email_address_account_div>input {
+    width: 250px;
+  }
+
+  .signupind_password_account_div {
+    width: 250px;
+  }
+
+  .signupind_enpassword_div>input,
+  .signupind_repassword_div>input {
+    width: 120px;
+  }
+
+  .signupind_Register_button_div>button {
+    width: 250px;
+  }
+
+  .signupind_google_button_div {
+    width: 250px;
+  }
+
+  .signupind_Already_account {
+    margin: 0px 0px 0px 40px;
+  }
+
+  .signup_elips_div>img {
+    width: 104px;
+  }
+
+  #signup_image13 {
+    margin: 12px -78px 0px 0px;
+  }
+
+  #image_corner_elips {
+  }
+
+  .login_reset_password_div>div>input {
+    margin-right: 10px;
+  }
+
+  .login_resetpassword_div {
+    margin-left: 20px;
+  }
+
+  .resetfillotp_main_container_div {
+    width: 250px;
+  }
+
+  .resetfillotp_container_div>input {
+    width: 30px;
+    min-height: 30px;
+  }
+
+  .resetfillotp_verify_button {
+    width: 250px;
+  }
+
+  .signupind_backbutton_div {
+    margin: -16px 0px 0px -200px;
+  }
+
+  .signup_backbutton_div {
+    margin: -41px 35px -2px -65px;
+  }
+  /* ----------------inputStyle_react_otp_input------------ */
+.inputStyle_react_otp_input{
+  width: 35px !important;
+  min-height: 35px;
+  margin: 7px 5px;
+
+}
+}
+
+/* --------------responsive---------------------- */
+@media screen and (max-width: 767px) {
+  .signup_container_div {
+    height: 600px;
+  }
+
+  .signup_backbutton_div {
+    margin: -70px 0px 0px 15px;
+    background-color: white;
+  }
+
+  .signup_container1_div {
+    display: none;
+  }
+
+  .signup_join_us_div {
+    width: 320px;
+  }
+
+  .signup_container2_mobile_div {
+    flex-direction: row-reverse;
+    display: flex;
+    margin-top: -100px;
+  }
+
+  .signup_container2_color_div {
+    display: block;
+    width: 100%;
+    padding: 25px 0px;
+    border-radius: 35px 35px 0px 0px;
+  }
+
+  .signup_Forcolor_color_div {
+    background-color: #f1864f;
+  }
+
+  .reset_Forcolor_color_div {
+    background-color: #5adb9e;
+  }
+
+  .login_Forcolor_color_div {
+    background-color: #957a5f;
+  }
+
+  .signupind_Forcolor_color_div {
+    background-color: #f9dcb7;
+  }
+
+  .signupbus_Forcolor_color_div {
+    background-color: #ff7070;
+  }
+
+  .signupind_backbutton_div {
+    border: none;
+    margin: -78px 0px 0px -250px;
+    background-color: transparent;
+    height: 30px;
+  }
+
+  #signup_image11 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    margin: 81px 112px 0px 0px;
+    width: 130px;
+  }
+
+  #signup_image13 {
+    margin: 0px -22px 21px -11px;
+    width: 120px;
+  }
+  .signupind_Register_account_div  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .signupind_Register_account_div>input,
+  .signupind_email_address_account_div>input {
+    width: 320px;
+  }
+  .login_Prosonal_account_div {
+    flex-direction: column;
+    /* width: 90%; */
+    margin-top: 30px;
+  }
+  .signupind_password_account_div {
+    width: 320px;
+  }
+
+  .signupind_enpassword_div>input,
+  .signupind_repassword_div>input {
+    width: 155px;
+  }
+
+  .signupind_Register_button_div>button {
+    width: 320px;
+  }
+
+  .signupind_google_button_div {
+    width: 320px;
+  }
+
+  .signupind_Already_account {
+    margin: 0px 0px 0px 150px;
+  }
+
+  .signup_elips_div>img {
+    float: right;
+    margin: -70px -30px;
+  }
+
+  .login_resetpassword_div {
+    margin-left: 90px;
+  }
+
+  .resetfillotp_main_container_div {
+    width: 320px;
+  }
+
+  .resetfillotp_container_div>input {
+    width: 40px;
+    min-height: 40px;
+  }
+
+  .resetfillotp_verify_button {
+    width: 320px;
+  }
+  .inputStyle_react_otp_input{
+    width: 40px !important;
+    min-height: 40px;
+    margin: 7px 8px;
+  
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signup_join_us_div {
+    /* width: 70%; */
+    width: 250px;
+
+  }
+  .signupind_Register_account_div>input,
+  .signupind_email_address_account_div>input {
+    width: 250px;
+  }
+
+  .signupind_password_account_div {
+    width: 250px;
+  }
+
+  .signupind_enpassword_div>input,
+  .signupind_repassword_div>input {
+    width: 120px;
+  }
+
+  .signupind_Register_button_div>button {
+    width: 250px;
+  }
+
+  .signupind_google_button_div {
+    width: 250px;
+  }
+
+  .signupind_Already_account {
+    margin: 0px 0px 0px 136px;
+  }
+
+  #signup_image13 {
+    margin: 0px -11px 21px -85px;
+    width: 120px;
+  }
+
+  .signup_elips_div>img {
+    display: none;
+  }
+
+  #image_corner_elips {
+    width: 150px;
+  }
+
+  .login_reset_password_div>div>input {
+    margin-right: 10px;
+  }
+
+  .login_resetpassword_div {
+    margin-left: 20px;
+  }
+
+  .resetfillotp_main_container_div {
+    width: 250px;
+  }
+
+  .resetfillotp_container_div>input {
+    width: 30px;
+    min-height: 30px;
+  }
+
+  .resetfillotp_verify_button {
+    width: 250px;
+  }
+  .inputStyle_react_otp_input{
+    width: 35px !important;
+    min-height: 35px;
+    margin: 7px 5px;
+  
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .signupind_Already_account {
+    margin: 0px 0px 100px 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .signupind_Already_account {
+    margin: 0px 0px 100px 50px;
+  }
+}

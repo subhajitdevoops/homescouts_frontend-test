@@ -1,0 +1,102 @@
+.UserTable_UserNameDivs{
+    justify-content: flex-start;
+    gap: 5px;
+    position: relative;
+    padding: 10px;
+}
+.UserTable_readUnread{
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+.reportRead{
+    color: #0CA324;
+}
+.Report_Status{
+    background: #EFF1F6;
+border: 2px solid #FFFFFF;
+box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.11);
+border-radius: 30px;
+padding: 5px 5px 5px 40px;
+}
+.Report_Statusimg{
+    position: absolute;
+}
+.cursor{
+ cursor: pointer;
+}
+
+
+/* ---------------------------react-table-component--------------------------- */
+.App {
+    font-family: sans-serif;
+    /* text-align: center; */
+  }
+  
+  .rdt_Table {
+    margin-bottom: 1rem;
+    
+  }
+  .rdt_TableRow {
+    /* background-color: grey ; */
+  }
+  .rdt_TableCol {
+    color: black ;
+    font-weight: bolder ;
+  }
+  .rdt_TableCol_Sortable {
+  }
+  .rdt_TableCell {
+
+  }
+  .rdt_TableHeader {
+    background-color: transparent ;
+    
+  }
+  .rdt_TableFooter {
+  }
+  .rdt_TableHead {
+  }
+  .rdt_TableHeadRow {
+    background-color: #f0f2fa!important;
+    /* color: #FFFFFF !important; */
+  }
+  .rdt_TableBody {
+    background-color: #EFF1F6 !important;
+
+  }
+  .rdt_ExpanderRow {
+    background-color: #EFF1F6 !important;
+
+  }
+  .krRRkh{
+    background-color: #f0f2fa!important;
+
+  }
+  .UserTable_readUnread {
+    width: 100%;
+  }
+  .kriIxi{
+    gap: 10px;
+  }
+  .kEREDR{
+    padding: 5px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+border-radius: 6px;
+height: 70px;
+  }
+  .kEREDR:not(:last-of-type) {
+    border-bottom-style: solid;
+    border-bottom-width: 0px !important;
+    border-bottom-color: rgba(0,0,0,.12);
+}
+.krRRkh{
+    padding: 0;
+}
+@media screen and (max-width:1400px) {
+  .UserTable_UserNameDivs{
+
+    padding: 2px;
+}
+  
+}
