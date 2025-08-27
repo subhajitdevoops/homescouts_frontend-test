@@ -148,7 +148,6 @@ const Login = () => {
       email: loginInfo.email,
       password: loginInfo.password,
     };
-    console.log(Login_data);
     
     let ResLogin = await API_REQ_POST(configData.USER_LOGIN_URL, Login_data);
     console.log(ResLogin);
@@ -156,6 +155,7 @@ const Login = () => {
     if (ResLogin) {
       setLoginState("Login Account");
       if (ResLogin.success === true) {
+        // Normal login success - keep existing code unchanged
         toast.success(ResLogin.message);
         localStorage.setItem("accessToken", JSON.stringify(ResLogin));
         setResponse(ResLogin);
@@ -163,45 +163,21 @@ const Login = () => {
           Cookies.set("accessToken", ResLogin.response.token, { expires: 7 });
         }
       } else {
-        // Check if the response indicates OTP verification is required
+        // Check if message indicates OTP verification needed
         if (ResLogin.message && (
-          ResLogin.message.toLowerCase().includes("otp") || 
           ResLogin.message.toLowerCase().includes("verify") ||
-          ResLogin.message.toLowerCase().includes("verification") ||
-          ResLogin.message.toLowerCase().includes("pending")
+          ResLogin.message.toLowerCase().includes("otp") ||
+          ResLogin.message.toLowerCase().includes("verification")
         )) {
-          // OTP verification required - redirect to OTP verification flow
-          toast.info("OTP verification required. Please verify your email first.");
-          setEmailForOtp(loginInfo.email);
-          setShowOtpVerification(true);
-          
-          // Send OTP for verification
-          try {
-            const otpRequest = {
-              email: loginInfo.email,
-            };
-            let otpResponse = await API_REQ_POST(
-              configData.MAIL_RESET_PASSWORD_URL,
-              otpRequest
-            );
-            
-            if (otpResponse.success) {
-              setResIdForOtp(otpResponse);
-              toast.success("OTP sent to your email for verification");
-            } else {
-              toast.error("Failed to send OTP. Please try again.");
-            }
-          } catch (error) {
-            console.error("Error sending OTP:", error);
-            toast.error("Failed to send OTP. Please try again.");
-          }
+          // Redirect to OTP verification without changing existing flow
+          navigate("/reset-password");
         } else {
-          // Regular login failure
+          // Keep existing error handling unchanged
           toast.warning(ResLogin.message);
         }
       }
     } else {
-      toast.error("Please Check Your Internet Connection !");
+        toast.error("Please Check Your Internet Connection !");
     }
   };
   // -------------------------login with google-----------------------------
