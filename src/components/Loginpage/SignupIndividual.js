@@ -1,30 +1,24 @@
-import React, { useEffect, useState } from "react";
-import "../../assets/signup/Signup.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
-  AiOutlineArrowLeft,
   AiFillEye,
   AiFillEyeInvisible,
+  AiOutlineArrowLeft,
 } from "react-icons/ai";
-import img3 from "../../assets/Logo.svg";
-import img4 from "../../assets/signup/Group 134.png";
-import img5 from "../../assets/signup/Group 124.png";
-import img6 from "../../assets/signup/Ellipse 44.png";
-import img7 from "../../assets/signup/Group 136.png";
-import img8 from "../../assets/signup/Group.png";
-import google from "../../assets/signup/flat-color-icons_google.png";
-import Axios from "axios";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RegisterVerify from "./RegisterVerify";
-import configData from "../../config/config.json";
+import img3 from "../../assets/Logo.svg";
+import img6 from "../../assets/signup/Ellipse 44.png";
+import img5 from "../../assets/signup/Group 124.png";
+import img4 from "../../assets/signup/Group 134.png";
+import img7 from "../../assets/signup/Group 136.png";
+import img8 from "../../assets/signup/Group.png";
+import "../../assets/signup/Signup.css";
 import { API_REQ_POST } from "../../config/API";
-import { object } from "prop-types";
-import { NavLink } from "react-router-dom";
+import configData from "../../config/config.json";
+import RegisterVerify from "./RegisterVerify";
 // import GoogleLogin from "react-google-login";
-import Cookies from "js-cookie";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import { GoogleLogin } from "@react-oauth/google";
+import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 
 const FullName = /^[A-Za-z. ]{3,30}$/;
 const emailValidator =
@@ -202,7 +196,6 @@ const SignupIndividual = () => {
     );
     console.log(ResInvidual);
     if (ResInvidual) {
-      // setOtpSend(true);
       setLoginState("Register Account");
       if (ResInvidual.success === true) {
         toast.success(`${ResInvidual.message}`);

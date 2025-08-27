@@ -1,21 +1,23 @@
 {
-    "REGISTRATION_INDIVIDUAL_URL": "https://homescouts.in/api/user/registration",
+    "REGISTRATION_INDIVIDUAL_URL": "http://localhost:9000/api/user/registration",
 
-    "REGISTRATION_INDIVIDUAL_OTP_URL": "https://homescouts.in/api/user/registration/otpverify",
+    "REGISTRATION_INDIVIDUAL_OTP_URL": "http://localhost:9000/api/user/registration/otpverify",
 
     "REGISTRATION_WITH_GOOGLE_URL":"https://homescouts.in/api/user/googleregistration",
 
-    "USER_LOGIN_URL":"https://homescouts.in/api/user/login",
+    "USER_LOGIN_URL":"http://localhost:9000/api/user/login",
 
     "USER_GOOGLE_LOGIN_URL":"https://homescouts.in/api/user/googlelogin",
 
-    "MAIL_RESET_PASSWORD_URL":"https://homescouts.in/api/user/resetpassword",
+    "MAIL_RESET_PASSWORD_URL":"http://localhost:9000/api/user/resetpassword",
 
-    "RESET_PASSWORD_URL":"https://homescouts.in/api/userlogin/sbrresetpwd",
+    "RESET_PASSWORD_URL":"http://localhost:9000/api/userlogin/sbrresetpwd",
 
-    "RESET_PASSWORD_VERIFY_OTP":"https://homescouts.in/api/user/resetotpverify",
+    "RESET_PASSWORD_VERIFY_OTP":"http://localhost:9000/api/user/resetotpverify",
 
-    "SET_NEW_PASSWORD_URL":"https://homescouts.in/api/user/setpassword",
+    "SET_NEW_PASSWORD_URL":"http://localhost:9000/api/user/setpassword",
+
+    "RESEND_OTP_URL": "http://localhost:9000/api/user/registration/resendotp",
 
     "ADMIN_LOGIN_URL":"https://homescouts.in/api/admin/login",
 

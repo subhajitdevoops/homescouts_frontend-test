@@ -1,5 +1,5 @@
 import Cookies from "js-cookie";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -17,7 +17,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import { NavLink } from "react-router-dom";
 // import Google from './google';
 import { GoogleLogin } from "@react-oauth/google";
-import ResetFillOtp from "../ResetFillOtp/ResetFillOtp";
+import ResetFillOtp from "./ResetFillOtp";
 
 const Google = () => {
   const navigate = useNavigate();
@@ -148,14 +148,19 @@ const Login = () => {
       email: loginInfo.email,
       password: loginInfo.password,
     };
-    
+
     let ResLogin = await API_REQ_POST(configData.USER_LOGIN_URL, Login_data);
     console.log(ResLogin);
-    
+
     if (ResLogin) {
       setLoginState("Login Account");
+      // If backend says OTP is required and success is true, redirect to OTP page and pass email
+      if (ResLogin.success === true && ResLogin.otpRequired === true) {
+        navigate("/RegistrationOtpVerify", { state: { email: loginInfo.email } });
+        toast.info(ResLogin.message || "OTP verification required");
+        return;
+      }
       if (ResLogin.success === true) {
-        // Normal login success - keep existing code unchanged
         toast.success(ResLogin.message);
         localStorage.setItem("accessToken", JSON.stringify(ResLogin));
         setResponse(ResLogin);
@@ -163,21 +168,10 @@ const Login = () => {
           Cookies.set("accessToken", ResLogin.response.token, { expires: 7 });
         }
       } else {
-        // Check if message indicates OTP verification needed
-        if (ResLogin.message && (
-          ResLogin.message.toLowerCase().includes("verify") ||
-          ResLogin.message.toLowerCase().includes("otp") ||
-          ResLogin.message.toLowerCase().includes("verification")
-        )) {
-          // Redirect to OTP verification without changing existing flow
-          navigate("/reset-password");
-        } else {
-          // Keep existing error handling unchanged
-          toast.warning(ResLogin.message);
-        }
+        toast.warning(ResLogin.message);
       }
     } else {
-        toast.error("Please Check Your Internet Connection !");
+      toast.error("Please Check Your Internet Connection !");
     }
   };
   // -------------------------login with google-----------------------------

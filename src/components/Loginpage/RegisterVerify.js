@@ -1,6 +1,3 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import { FcClock } from "react-icons/fc";
 
 const RegisterVerify = ({
@@ -42,23 +39,17 @@ const RegisterVerify = ({
 
       {/* <br /> */}
       <div className=" w-100 flex_c resetfillotp_container_buttontimer_div">
-        {counter === 0 ? (
-          <button
-            className=" h3p resetfillotp_container_button"
-            id="bg_blue"
-            onClick={handleResetTime}
-          >
-            <span>ResendOTP</span> <FcClock />
-          </button>
-        ) : (
-          <button
-            className=" h3p resetfillotp_container_button"
-            //   id='bg_blue'
-            //   onClick={handleResetTime}
-          >
-            <span>ResendOTP</span> <FcClock />
-          </button>
-        )}
+        <button
+          className=" h3p resetfillotp_container_button"
+          id="bg_blue"
+          onClick={e => {
+            e.preventDefault();
+            if (counter === 0) handleResetTime();
+          }}
+          disabled={counter !== 0}
+        >
+          <span>ResendOTP</span> <FcClock />
+        </button>
         <p className="c_blue h3p resetfillotp_container_timer">
           00:{counter < 10 ? "0" : null}
           {counter}

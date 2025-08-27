@@ -1,54 +1,52 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import Page404 from "./404Page/Page404";
 import "./App.css";
-import './index.css';
 import "./ResponsiveApp.css";
 import Dashbord from "./components/Dashbord/Dashbord";
-import Admin from "./components/admin/Admin";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-import Signup from "./components/admin/Signup";
-import Signin from "./components/admin/Signin";
-import Contacttable from "./components/admin/Contacttable";
-import ServiceMasterMain from "./components/admin/ServiceMasterMain";
-import Property from "./components/admin/Property/Property";
-import FurnishedMain from "./components/admin/Furnished/FurnishedMain";
-import Signup1 from "./components/Loginpage/Signup";
-import SignupIndividual from "./components/Loginpage/SignupIndividual";
-import SignupBusiness from "./components/Loginpage/SignupBusiness";
-import Login from "./components/Loginpage/Login";
-import ResetPasswordMain from "./components/Loginpage/ResetPasswordMain";
 import Home from "./components/Home/Home";
-import UserMainpage from "./components/Userpage/UserMainpage";
-import PostProperty from "./components/postProperty/PostProperty";
 import UserChatFullScreen from "./components/Home/UserChat/UserChatFullScreen";
-import MyAdsMain from "./components/Profile/MyAds/MyAdsMain";
-import ProfileSettingMain from "./components/Profile/ProfileSettingPage/ProfileSettingMain";
-import AccountChangeMain from "./components/Profile/AccountChange/AccountChangeMain";
-import ServiceProviderMain from "./components/Profile/ServiceProvider/ServiceProviderMain";
-import NotificationsMain from "./components/Profile/Notifications/NotificationsMain";
-import PropertyMainPageDetails from "./components/PropertiePageDetails/PropertieMainPageDetails";
-import UserMainOverview from "./components/admin/UserProfileVerify/UserMainOverview";
-import UserDetailsMain from "./components/admin/UserDetails/UserDetailsMain";
-import TotalUserDataTable from "./components/admin/TotalUserDataTable/TotalUserDataTable";
-import LikePropertyMain from "./components/Profile/LikePropertys/LikePropertyMain";
-import ReportMain from "./components/admin/Report/ReportMain";
-import MyServiceMain from "./components/Profile/MyService/MyServiceMain";
-import TiffinServiceMainPage from "./components/TiffinService/TiffinServiceMainPage";
+import Userchat from "./components/Home/UserChat/Userchat";
+import Login from "./components/Loginpage/Login";
+import RegistrationOtpVerify from "./components/Loginpage/RegistrationOtpVerify";
+import ResetPasswordMain from "./components/Loginpage/ResetPasswordMain";
+import Signup1 from "./components/Loginpage/Signup";
+import SignupBusiness from "./components/Loginpage/SignupBusiness";
+import SignupIndividual from "./components/Loginpage/SignupIndividual";
 import AdminChangePassword from "./components/Loginpage/adminLogin/AdminChangePassword";
 import AdminLogin from "./components/Loginpage/adminLogin/AdminLogin";
+import AccountChangeMain from "./components/Profile/AccountChange/AccountChangeMain";
+import LikePropertyMain from "./components/Profile/LikePropertys/LikePropertyMain";
+import LikeServiceMain from "./components/Profile/LikeService/LikeServiceMain";
+import MyAdsMain from "./components/Profile/MyAds/MyAdsMain";
+import MyServiceMain from "./components/Profile/MyService/MyServiceMain";
+import NotificationsMain from "./components/Profile/Notifications/NotificationsMain";
+import ProfileSettingMain from "./components/Profile/ProfileSettingPage/ProfileSettingMain";
+import ServiceProviderMain from "./components/Profile/ServiceProvider/ServiceProviderMain";
+import PropertyMainPageDetails from "./components/PropertiePageDetails/PropertieMainPageDetails";
+import PrivacyPolicy from "./components/Term&Condition/PrivacyPolicy";
+import TermAndCondition from "./components/Term&Condition/TermAndCondition";
+import TiffinServiceMainPage from "./components/TiffinService/TiffinServiceMainPage";
+import UserMainpage from "./components/Userpage/UserMainpage";
+import Admin from "./components/admin/Admin";
+import Contacttable from "./components/admin/Contacttable";
+import FurnishedMain from "./components/admin/Furnished/FurnishedMain";
 import PostPropertyRequestMain from "./components/admin/PendingRequest/PostPropertyRequest/PostPropertyRequestMain";
 import ServiceRequestMain from "./components/admin/PendingRequest/ServiceRequest/ServiceRequestMain";
-import LikeServiceMain from "./components/Profile/LikeService/LikeServiceMain";
-import TermAndCondition from "./components/Term&Condition/TermAndCondition";
-import ScrollToTop from "./context/ScrollToTop";
-import PrivacyPolicy from "./components/Term&Condition/PrivacyPolicy";
-import Userchat from "./components/Home/UserChat/Userchat";
+import Property from "./components/admin/Property/Property";
+import ReportMain from "./components/admin/Report/ReportMain";
+import ServiceMasterMain from "./components/admin/ServiceMasterMain";
+import TotalUserDataTable from "./components/admin/TotalUserDataTable/TotalUserDataTable";
+import UserDetailsMain from "./components/admin/UserDetails/UserDetailsMain";
+import UserMainOverview from "./components/admin/UserProfileVerify/UserMainOverview";
+import PostProperty from "./components/postProperty/PostProperty";
 import AuthContext from "./context/AuthProvider";
-import Page404 from "./404Page/Page404";
+import './index.css';
 // import { NavLink, useNavigate } from "react-router-dom";
 
 // https://ik.imagekit.io/ramcoder/path/to/myimage.jpg
@@ -201,6 +199,8 @@ function App() {
           <Route path="/signup-business" element={<SignupBusiness />} />
           <Route path="/login" element={<Login />} />
           <Route path="/reset-password" element={<ResetPasswordMain />} />
+          <Route path="/registration-otp-verify" element={<RegistrationOtpVerify />} />
+          <Route path="/RegistrationOtpVerify" element={<RegistrationOtpVerify />} />
           <Route path="/" element={<Home />} />
           <Route path="/search/property" element={<UserMainpage />} />
           <Route

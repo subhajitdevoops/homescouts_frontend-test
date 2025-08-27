@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./Buysearch.css";
-import { ImCross, ImLocation2 } from "react-icons/im";
-import { MdKeyboardVoice } from "react-icons/md";
-import { FcSearch } from "react-icons/fc";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
-import { Link } from "react-router-dom";
-import SelectObject from "../SelectObject/SelectObject";
-import { useContext } from "react";
-import AuthContext from "../../../context/AuthProvider";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useContext, useEffect, useState } from "react";
 import { BiCurrentLocation } from "react-icons/bi";
+import { FcSearch } from "react-icons/fc";
+import { ImCross, ImLocation2 } from "react-icons/im";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { MdKeyboardVoice } from "react-icons/md";
+import { Link } from "react-router-dom";
+import SpeechRecognition, {
+    useSpeechRecognition,
+} from "react-speech-recognition";
 import { getLocations } from "../../../config/Helper";
+import AuthContext from "../../../context/AuthProvider";
+import "./Buysearch.css";
 
 // import e from "express";
 
@@ -29,11 +27,17 @@ const Buysearch = ({ setOpenVoice, setText, text }) => {
   console.log("transcript==>", transcript);
   const value = useContext(AuthContext);
   useEffect(() => {
-    if (window.SpeechRecognition) {
-      const recognition = new window.SpeechRecognition();
-      recognition.requestPermission().then((result) => {
-        console.log("Microphone permission:", result);
-      });
+    if (window.SpeechRecognition && navigator.mediaDevices) {
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then((stream) => {
+          // Permission granted
+          stream.getTracks().forEach(track => track.stop()); // Stop the stream immediately
+          console.log("Microphone permission granted");
+        })
+        .catch((err) => {
+          // Permission denied
+          console.log("Microphone permission denied", err);
+        });
     }
   }, []);
 
