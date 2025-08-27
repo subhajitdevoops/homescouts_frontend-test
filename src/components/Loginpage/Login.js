@@ -1,25 +1,23 @@
-import React, { useState, useEffect } from "react";
-import "../../assets/signup/Signup.css";
+import Cookies from "js-cookie";
+import React, { useEffect, useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import img3 from "../../assets/Logo.svg";
-import img4 from "../../assets/signup/Group 134.png";
-import img5 from "../../assets/signup/Group 124.png";
 import img6 from "../../assets/signup/Ellipse 44.png";
+import img5 from "../../assets/signup/Group 124.png";
+import img4 from "../../assets/signup/Group 134.png";
 import img7 from "../../assets/signup/Group 136.png";
 import img8 from "../../assets/signup/Group.png";
-import google from "../../assets/signup/flat-color-icons_google.png";
-import Axios from "axios";
-import configData from "../../config/config.json";
+import "../../assets/signup/Signup.css";
 import { API_REQ_POST } from "../../config/API";
-import Cookies from "js-cookie";
+import configData from "../../config/config.json";
 // import { GoogleLogin } from "react-google-login";
-import { NavLink } from "react-router-dom";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import { NavLink } from "react-router-dom";
 // import Google from './google';
 import { GoogleLogin } from "@react-oauth/google";
-import jwt_decode from "jwt-decode";
+import ResetFillOtp from "../ResetFillOtp/ResetFillOtp";
 
 const Google = () => {
   const navigate = useNavigate();
@@ -85,6 +83,9 @@ const Login = () => {
   // console.log("getToken>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",getToken)
   // localStorage.clear("accessToken");
   const [remember, setRemember] = useState(false);
+  const [showOtpVerification, setShowOtpVerification] = useState(false);
+  const [emailForOtp, setEmailForOtp] = useState("");
+  const [resIdForOtp, setResIdForOtp] = useState(null);
 
   const navigate = useNavigate();
   // ---------------------------------------------------------
@@ -148,9 +149,10 @@ const Login = () => {
       password: loginInfo.password,
     };
     console.log(Login_data);
-    // response from API---------------
+    
     let ResLogin = await API_REQ_POST(configData.USER_LOGIN_URL, Login_data);
     console.log(ResLogin);
+    
     if (ResLogin) {
       setLoginState("Login Account");
       if (ResLogin.success === true) {
@@ -161,14 +163,46 @@ const Login = () => {
           Cookies.set("accessToken", ResLogin.response.token, { expires: 7 });
         }
       } else {
-        toast.warning(ResLogin.message);
+        // Check if the response indicates OTP verification is required
+        if (ResLogin.message && (
+          ResLogin.message.toLowerCase().includes("otp") || 
+          ResLogin.message.toLowerCase().includes("verify") ||
+          ResLogin.message.toLowerCase().includes("verification") ||
+          ResLogin.message.toLowerCase().includes("pending")
+        )) {
+          // OTP verification required - redirect to OTP verification flow
+          toast.info("OTP verification required. Please verify your email first.");
+          setEmailForOtp(loginInfo.email);
+          setShowOtpVerification(true);
+          
+          // Send OTP for verification
+          try {
+            const otpRequest = {
+              email: loginInfo.email,
+            };
+            let otpResponse = await API_REQ_POST(
+              configData.MAIL_RESET_PASSWORD_URL,
+              otpRequest
+            );
+            
+            if (otpResponse.success) {
+              setResIdForOtp(otpResponse);
+              toast.success("OTP sent to your email for verification");
+            } else {
+              toast.error("Failed to send OTP. Please try again.");
+            }
+          } catch (error) {
+            console.error("Error sending OTP:", error);
+            toast.error("Failed to send OTP. Please try again.");
+          }
+        } else {
+          // Regular login failure
+          toast.warning(ResLogin.message);
+        }
       }
-      // console.log("setDefaultMessage........ ", ResLogin);
     } else {
-      toast.error(ResLogin.message);
+      toast.error("Please Check Your Internet Connection !");
     }
-    // }
-    // return error;
   };
   // -------------------------login with google-----------------------------
   const responseGoogle = (response) => {
@@ -185,6 +219,55 @@ const Login = () => {
     //   }, 1000);
     // }
   };
+
+  // If OTP verification is required, show the OTP verification component
+  if (showOtpVerification) {
+    return (
+      <div>
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseonhover={false}
+        />
+        
+        {/* Add a back button to return to login */}
+        <div style={{ padding: "20px", textAlign: "center" }}>
+          <button 
+            onClick={() => setShowOtpVerification(false)}
+            style={{
+              background: "none",
+              border: "1px solid #007bff",
+              color: "#007bff",
+              padding: "10px 20px",
+              borderRadius: "5px",
+              cursor: "pointer"
+            }}
+          >
+            ← Back to Login
+          </button>
+        </div>
+        
+        {/* OTP Verification Component */}
+        <ResetFillOtp
+          newpas={false}
+          setNewpas={() => {
+            // After successful OTP verification, redirect to login
+            setShowOtpVerification(false);
+            toast.success("Email verified successfully! Please login again.");
+          }}
+          text={emailForOtp}
+          resId={resIdForOtp}
+        />
+      </div>
+    );
+  }
+
   return (
     <div>
       <ToastContainer
